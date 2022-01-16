@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#CDD1FF"
     tools:context=".login">
 
     <ImageView
@@ -27,11 +28,12 @@
         android:layout_marginTop="20dp"
         android:orientation="horizontal">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:layout_width="160dp"
             android:layout_height="match_parent"
-            android:backgroundTint="#6774FF"
+            android:backgroundTint="#CDD1FF"
             android:text="학생용"
+            android:textColor="@color/black"
             tools:layout_editor_absoluteX="192dp"
             tools:layout_editor_absoluteY="277dp" />
 
@@ -40,9 +42,9 @@
             android:id="@+id/button2"
             android:layout_width="160dp"
             android:layout_height="match_parent"
-            android:backgroundTint="#CDD1FF"
+            android:backgroundTint="#6774FF"
             android:text="학교용"
-            android:textColor="@color/black" />
+            android:textColor="@color/white" />
 
     </LinearLayout>
 
