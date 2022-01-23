@@ -27,37 +27,123 @@
             android:textSize="24sp"
             android:textStyle="bold" />
 
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="343dp"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="45dp"
+                    app:srcCompat="@drawable/logo2"
+                    tools:layout_editor_absoluteX="28dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"
+                    android:text="회원정보를 입력해주세요."
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="27dp"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="27dp"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint=" 입학 연도"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName5"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="27dp"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint=" 반"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName6"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="27dp"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint=" 번호"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName7"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="27dp"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint=" 이름"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName9"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="27dp"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint=" 아이디"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName8"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="27dp"
+                    android:layout_marginTop="5dp"
+                    android:drawableRight="@drawable/ic_baseline_remove_red_eye_24"
+                    android:ems="10"
+                    android:hint=" 비밀번호"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName10"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="27dp"
+                    android:layout_marginTop="5dp"
+                    android:drawableRight="@drawable/ic_baseline_remove_red_eye_24"
+                    android:ems="10"
+                    android:hint=" 비밀번호 확인"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="false"
+                    android:text="Button" />
+
+            </LinearLayout>
+        </ScrollView>
+
     </RelativeLayout>
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="343dp"
-        android:layout_height="120dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp"
-        app:srcCompat="@drawable/logo2"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/imageView3"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="20dp"
-        android:text="회원정보를 입력해주세요."
-        android:textSize="16sp"
-        android:textStyle="bold" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textView3"
-        android:drawableLeft="@android:drawable/btn_star_big_on"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name" />
 
 </RelativeLayout>
