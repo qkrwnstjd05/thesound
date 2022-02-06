@@ -342,7 +342,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/ourschooltop3"
         android:layout_centerInParent="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="21dp"
         android:text="전국 학교 청원 top3"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         android:textColor="#000000" />
@@ -351,7 +351,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="-1dp"
+        android:layout_marginBottom="2dp"
+        app:itemIconTint="@drawable/color"
+        app:itemTextColor="@drawable/color"
         app:menu="@menu/menu" />
 
 </RelativeLayout>
