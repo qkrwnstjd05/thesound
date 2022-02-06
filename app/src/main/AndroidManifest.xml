@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Thesound">
         <activity
+            android:name=".petiton"
+            android:exported="false" />
+        <activity
+            android:name=".asksee"
+            android:exported="false" />
+        <activity
+            android:name=".askX"
+            android:exported="false" />
+        <activity
+            android:name=".askO"
+            android:exported="false" />
+        <activity
+            android:name=".ask2"
+            android:exported="false" />
+        <activity
             android:name=".signup1"
             android:exported="false" />
         <activity
