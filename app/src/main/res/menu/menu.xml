@@ -6,27 +6,34 @@
         android:id="go_to_all_inbox"
         android:icon="@drawable/ic_baseline_all_inbox_24"
         android:title="보관함"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="always" />
 
     <item
         android:id="go_to_search"
         android:icon="@drawable/ic_baseline_search_24"
         android:title="검색"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="always"
+        />
 
     <item
         android:id="go_to_home"
         android:icon="@drawable/home1"
         android:title="홈"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="always"
+        app:itemIconTint="@drawable/color"
+        app:itemTextColor="@drawable/color"/>
     <item
         android:id="go_to_Profile"
         android:icon="@drawable/ic_baseline_person_24"
         android:title="프로필"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="always"
+        app:itemIconTint="@drawable/color"
+        app:itemTextColor="@drawable/color"/>
     <item
         android:id="go_to_inbox"
         android:icon="@drawable/ic_baseline_move_to_inbox_24"
         android:title="임시보관함"
-        app:showAsAction="ifRoom"/>
+        app:showAsAction="always"
+        app:itemIconTint="@drawable/color"
+        app:itemTextColor="@drawable/color"/>
 </menu>
