@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "327270543758",
+    "project_id": "thevoice-c7e1e",
+    "storage_bucket": "thevoice-c7e1e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:327270543758:android:56c5f88b7cfc417a4c34df",
+        "android_client_info": {
+          "package_name": "com.thesound"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "327270543758-bgspr1odh2a8p1uqe53qe6q8ob30mepu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOE8wkJhiob-uCnJERtv0UbOwEkao9OLg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "327270543758-bgspr1odh2a8p1uqe53qe6q8ob30mepu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

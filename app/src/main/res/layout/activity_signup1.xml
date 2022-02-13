@@ -14,7 +14,6 @@
             android:id="@+id/imageView6"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            android:tint="@color/black"
             app:srcCompat="@drawable/abc_vector_test" />
 
         <TextView
@@ -104,7 +103,7 @@
                     android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName9"
+                    android:id="@+id/textId"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginHorizontal="27dp"
@@ -114,7 +113,7 @@
                     android:inputType="textPersonName" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName8"
+                    android:id="@+id/textPw"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginHorizontal="27dp"
