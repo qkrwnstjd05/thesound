@@ -1,6 +1,8 @@
 package com.thesound;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,15 +22,8 @@ public class Main extends AppCompatActivity {
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                i++;
-                if(i%2==0){
-                    textView8.setText("김윤기는 짝수만큼 바보다");
-                }
-                else{
-                    textView8.setText("김윤기는 홀수 보다 바보다");
-                }
 
             }
+        }
+            }
         });
-    }
-}

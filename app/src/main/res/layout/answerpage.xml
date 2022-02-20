@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="203dp"
+        android:layout_height="101dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/logo2" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="청원 제목"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+    <ScrollView
+        android:id="@+id/HI"
+        android:layout_width="389dp"
+        android:layout_height="223dp"
+        android:layout_below="@id/textView40"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="250dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/HI"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="-230dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:ems="10"
+                android:hint="*선생님이 청원에 대한 이야기를 해주세요"
+                android:inputType="textPersonName"
+                android:text="Name" />
+
+            <androidx.appcompat.widget.AppCompatButton
+
+                android:id="@+id/button12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/button"
+                android:gravity="center|center_horizontal"
+                android:text="Button"
+                android:textColor="#FFFFFF"
+                tools:text="청원대답 완료" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

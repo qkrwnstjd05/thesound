@@ -20,7 +20,7 @@
         android:layout_below="@id/imageView12"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:text="길동홍"
+        android:text="홍길동"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:textColor="#222222" />
 
@@ -31,7 +31,7 @@
         android:layout_below="@id/textView25"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
-        android:text="임시보관함"
+        android:text="보관함"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="#000000" />
 
@@ -145,5 +145,4 @@
         app:itemIconTint="@drawable/color"
         app:itemTextColor="@drawable/color"
         app:menu="@menu/menu" />
-
 </RelativeLayout>
