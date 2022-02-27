@@ -51,6 +51,7 @@
                 android:layout_width="88dp"
                 android:layout_height="match_parent"
                 android:layout_weight="4"
+                android:background="#FFD5D5D5"
                 android:gravity="center"
                 android:text="이름"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
@@ -60,6 +61,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="#D5D5D5"
                 android:gravity="center"
                 android:text="재출날짜"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
