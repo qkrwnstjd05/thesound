@@ -52,7 +52,7 @@
         android:layout_below="@id/editTextTextMultiLine2"
         android:layout_marginHorizontal="30dp"
         android:layout_marginTop="10dp"
-        android:text="*좋아요 수가 전교생의 20&가 넘으면 필수 답변 청원이 됩니다.*" />
+        android:text="*좋아요 수가 전교생의 20가 넘으면 필수 답변 청원이 됩니다.*" />
 
     <TextView
         android:id="@+id/textView41"
