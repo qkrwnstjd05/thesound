@@ -4,17 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#FFFFFF"
     tools:context=".signup1">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ImageView
-            android:id="@+id/imageView6"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button13"
+            style="?android:attr/borderlessButtonStyle"
             android:layout_width="35dp"
             android:layout_height="35dp"
-            app:srcCompat="@drawable/abc_vector_test" />
+            android:layout_alignParentTop="true"
+            android:backgroundTint="@color/white"
+            android:text="❮"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
 
         <TextView
             android:id="@+id/textView2"
@@ -55,12 +61,25 @@
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
-                <Spinner
-                    android:id="@+id/spinner"
+                <EditText
+                    android:id="@+id/editTextTextPersonName6"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginHorizontal="27dp"
-                    android:layout_marginTop="10dp" />
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint=" 학교 이름"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName7"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="27dp"
+                    android:layout_marginTop="5dp"
+                    android:ems="10"
+                    android:hint=" 학교 주소"
+                    android:inputType="textPersonName" />
 
                 <EditText
                     android:id="@+id/textyear"
