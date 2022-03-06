@@ -32,6 +32,7 @@
             android:layout_height="match_parent"
             android:backgroundTint="#6774FF"
             android:text="학생용"
+            android:textSize="16sp"
             tools:layout_editor_absoluteX="192dp"
             tools:layout_editor_absoluteY="277dp" />
 
@@ -42,7 +43,8 @@
             android:layout_height="match_parent"
             android:backgroundTint="#CDD1FF"
             android:text="학교용"
-            android:textColor="@color/black" />
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
     </LinearLayout>
 
