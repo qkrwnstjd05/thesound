@@ -45,7 +45,10 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="564dp"
-        android:layout_below="@id/surch" />
+        android:layout_below="@id/surch"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp" />
 
 
 </RelativeLayout>
