@@ -22,6 +22,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="10dp"
         android:text="인증 대기 중입니다."
+        android:textColor="#000000"
         android:textSize="20sp" />
 
     <TextView
@@ -30,5 +31,6 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:text="인증이 완료될 때까지 기다려주세요."
+        android:textColor="#000000"
         android:textSize="20sp" />
 </RelativeLayout>

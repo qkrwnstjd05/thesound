@@ -19,6 +19,7 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:text="실패하였습니다."
+        android:textColor="#000000"
         android:textSize="20sp" />
 
     <TextView
@@ -29,6 +30,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:text="문제가 발생하였다면 학교에 문의해주세요."
+        android:textColor="#000000"
         android:textSize="20sp" />
 
     <Button
