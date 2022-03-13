@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
     tools:context=".askX">
 
     <ImageView
@@ -27,6 +28,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/textView28"
+        android:layout_centerInParent="false"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:text="문제가 발생하였다면 학교에 문의해주세요."
