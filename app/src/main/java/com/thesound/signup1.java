@@ -30,6 +30,7 @@ public class signup1 extends AppCompatActivity {
     private EditText textclassroom;
     private EditText textnumber;
     private EditText textname;
+    private EditText textPwChk;
 
 
     private String email = "";
@@ -45,12 +46,13 @@ public class signup1 extends AppCompatActivity {
         firebaseAuth=FirebaseAuth.getInstance();
 
         button9 = (Button) findViewById(R.id.button9); //회원가입 버튼
-        textId=(EditText) findViewById(R.id.textId);
-        textPw=(EditText) findViewById(R.id.textPw);
-        textyear=(EditText) findViewById(R.id.textyear);
-        textclassroom=(EditText) findViewById(R.id.textclassroom);
-        textnumber=(EditText) findViewById(R.id.textnumber);
-        textname=(EditText) findViewById(R.id.textname);
+        textId=(EditText) findViewById(R.id.stu_email);
+        textPw=(EditText) findViewById(R.id.stu_pw);
+        textPwChk=(EditText) findViewById(R.id.stu_pw_chk);
+        textyear=(EditText) findViewById(R.id.stu_sch_year);
+        textclassroom=(EditText) findViewById(R.id.stu_sch_classroom);
+        textnumber=(EditText) findViewById(R.id.stu_sch_number);
+        textname=(EditText) findViewById(R.id.stu_name);
 
         button9.setOnClickListener(new View.OnClickListener() {
             @Override

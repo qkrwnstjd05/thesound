@@ -8,7 +8,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:backgroundTint="#FFFFFF">
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button13"
@@ -28,19 +29,19 @@
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="false"
             android:text="회원가입"
-            android:textSize="24sp"
+            android:textSize="25sp"
             android:textStyle="bold" />
 
         <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="343dp"
-        android:layout_height="120dp"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="45dp"
-        app:srcCompat="@drawable/logo2"
-        tools:layout_editor_absoluteX="28dp"
-        tools:layout_editor_absoluteY="16dp" />
+            android:id="@+id/imageView3"
+            android:layout_width="343dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="45dp"
+            app:srcCompat="@drawable/logomain"
+            tools:layout_editor_absoluteX="28dp"
+            tools:layout_editor_absoluteY="16dp" />
 
         <TextView
             android:id="@+id/textView3"
@@ -54,7 +55,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/sch_name"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_below="@id/textView3"
@@ -66,10 +67,10 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName2"
+            android:id="@+id/sch_address"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@id/editTextTextPersonName"
+            android:layout_below="@id/sch_name"
             android:layout_centerHorizontal="true"
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="5dp"
@@ -78,10 +79,10 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName3"
+            android:id="@+id/sch_email"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@id/editTextTextPersonName2"
+            android:layout_below="@id/sch_address"
             android:layout_centerHorizontal="true"
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="5dp"
@@ -90,34 +91,58 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName5"
+            android:id="@+id/sch_teacher"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@id/editTextTextPersonName3"
+            android:layout_below="@id/sch_email"
             android:layout_centerHorizontal="true"
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="5dp"
             android:ems="10"
-            android:hint=" 인증번호"
+            android:hint=" 교사명"
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName8"
+            android:id="@+id/sch_number"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_below="@id/editTextTextPersonName5"
-            android:layout_centerHorizontal="true"
+            android:layout_below="@id/sch_teacher"
             android:layout_marginHorizontal="30dp"
             android:layout_marginTop="5dp"
             android:ems="10"
+            android:hint="전화번호"
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editTextTextPersonName9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/sch_pw"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/sch_number"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint=" 비밀번호"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/sch_pw_chk"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/sch_pw"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="5dp"
+            android:ems="10"
+            android:hint=" 비밀번호 확인"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/sch_pw_chk"
+            android:layout_marginHorizontal="35dp"
+            android:layout_marginTop="30dp"
+            android:text="Button" />
 
     </RelativeLayout>
+</RelativeLayout>
