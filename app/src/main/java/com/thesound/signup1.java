@@ -31,7 +31,7 @@ public class signup1 extends AppCompatActivity {
     private EditText textnumber;
     private EditText textname;
     private EditText textPwChk;
-
+    private EditText textSchoolname;
 
     private String email = "";
     private String password = "";
@@ -53,6 +53,7 @@ public class signup1 extends AppCompatActivity {
         textclassroom=(EditText) findViewById(R.id.stu_sch_classroom);
         textnumber=(EditText) findViewById(R.id.stu_sch_number);
         textname=(EditText) findViewById(R.id.stu_name);
+        textSchoolname=(EditText)findViewById(R.id.stu_sch_name);
 
         button9.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -73,9 +74,10 @@ public class signup1 extends AppCompatActivity {
                             String classroom=textclassroom.getText().toString();
                             String number=textnumber.getText().toString();
                             String name=textname.getText().toString();
-                            Login_info login_info=new Login_info(uid,year,classroom,number,name);
+                            String stu_sch_name=textSchoolname.getText().toString();
+                            Login_info login_info=new Login_info(year,classroom,number,name,stu_sch_name);
                             FirebaseFirestore db=FirebaseFirestore.getInstance();
-                            db.collection("studentUser").document().set(login_info)
+                            db.collection("studentUser").document(uid).set(login_info)
                                     .addOnSuccessListener(new OnSuccessListener<Void>() {
                                         @Override
                                         public void onSuccess(Void aVoid) {

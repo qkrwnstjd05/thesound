@@ -73,17 +73,6 @@
                     android:hint=" 학교 이름"
                     android:inputType="textPersonName" />
 
-                <EditText
-                    android:id="@+id/stu_sch_address"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginHorizontal="25dp"
-                    android:layout_marginTop="10dp"
-                    android:background="@drawable/textline"
-                    android:ems="10"
-                    android:hint=" 학교 주소"
-                    android:inputType="textPersonName" />
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -152,7 +141,7 @@
                     android:background="@drawable/textline"
                     android:ems="10"
                     android:hint=" 비밀번호"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName|textPassword" />
 
                 <EditText
                     android:id="@+id/stu_pw_chk"
@@ -163,7 +152,7 @@
                     android:background="@drawable/textline"
                     android:ems="10"
                     android:hint=" 비밀번호 확인"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName|textPassword" />
 
                 <Button
                     android:id="@+id/button9"

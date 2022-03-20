@@ -24,10 +24,8 @@ public class signup2 extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
     private EditText sch_name;
-    private EditText sch_address;
     private EditText sch_email;
     private EditText sch_teacher;
-    private EditText sch_number;
     private EditText sch_pw;
     private EditText sch_pw_chk;
 
@@ -42,10 +40,8 @@ public class signup2 extends AppCompatActivity {
         firebaseAuth= FirebaseAuth.getInstance();
 
         sch_name=(EditText) findViewById(R.id.sch_name);
-        sch_address=(EditText) findViewById(R.id.sch_address);
         sch_email=(EditText) findViewById(R.id.sch_email);
         sch_teacher=(EditText) findViewById(R.id.sch_teacher);
-        sch_number=(EditText) findViewById(R.id.sch_number);
         sch_pw=(EditText) findViewById(R.id.sch_pw);
         sch_pw_chk=(EditText) findViewById(R.id.sch_pw_chk);
         Button15=(Button) findViewById(R.id.button15);
@@ -67,31 +63,22 @@ public class signup2 extends AppCompatActivity {
     }
     class SchoolDTO{
         String sch_name;
-        String sch_address;
         String sch_email;
         String sch_teacher;
-        String sch_number;
-        String sch_uid;
-        String sch_type;
+        String type;
 
-        public SchoolDTO(String sch_name,String sch_address,String sch_email, String sch_teacher,String sch_number,String sch_uid){
+        public SchoolDTO(String sch_name,String sch_email, String sch_teacher){
             this.sch_name=sch_name;
-            this.sch_address=sch_address;
             this.sch_email=sch_email;
             this.sch_teacher=sch_teacher;
-            this.sch_number=sch_number;
-            this.sch_uid=sch_uid;
-            this.sch_type="sch";
+            this.type="sch";
         }
         public HashMap getSchoolDTO(){
             HashMap<String,Object> map = new HashMap<String,Object>();
             map.put("sch_name",sch_name);
-            map.put("sch_address",sch_address);
             map.put("sch_email",sch_email);
             map.put("sch_teacher",sch_teacher);
-            map.put("sch_number",sch_number);
-            map.put("sch_uid",sch_uid);
-            map.put("sch_type",sch_type);
+            map.put("sch_type",type);
             return map;
         }
     }
@@ -103,13 +90,11 @@ public class signup2 extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             String uid=firebaseAuth.getCurrentUser().getUid();
                             String strName=sch_name.getText().toString();
-                            String strAdd=sch_address.getText().toString();
                             String strTeacher=sch_teacher.getText().toString();
-                            String strNumber=sch_number.getText().toString();
-                            SchoolDTO schDTO=new SchoolDTO(strName,strAdd,email,strTeacher,strNumber,uid);
+                            SchoolDTO info=new SchoolDTO(strName,email,strTeacher);
 
                             FirebaseFirestore db=FirebaseFirestore.getInstance();
-                            db.collection("schoolUser").document().set(schDTO)
+                            db.collection("schoolUser").document(uid).set(info)
                                     .addOnSuccessListener(new OnSuccessListener<Void>() {
                                         @Override
                                         public void onSuccess(Void aVoid) {
