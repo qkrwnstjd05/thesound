@@ -18,6 +18,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class  login extends AppCompatActivity {
     Button button6;
     Button button5;
+    Button button7;
     // 파이어베이스 인증 객체 생성
     private FirebaseAuth firebaseAuth;
 
@@ -33,6 +34,8 @@ public class  login extends AppCompatActivity {
         firebaseAuth=FirebaseAuth.getInstance();
         button6 = (Button) findViewById(R.id.button6);
         button5 = (Button) findViewById(R.id.button5);
+        button7 = (Button) findViewById(R.id.button7);
+
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -45,6 +48,13 @@ public class  login extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i=new Intent(login.this,signup1.class);
+                startActivity(i);
+            }
+        });
+        button7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(login.this,signup2.class);
                 startActivity(i);
             }
         });
