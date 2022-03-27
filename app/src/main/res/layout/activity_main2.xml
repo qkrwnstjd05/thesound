@@ -15,7 +15,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <ImageView
@@ -82,8 +82,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.2"
+                        android:background="@drawable/graytextline"
                         android:gravity="center"
-                        android:text="NO."
+                        android:text="순위"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
                     <TextView
@@ -91,6 +92,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="5"
+                        android:background="@drawable/graytextline"
                         android:gravity="center"
                         android:text="청원 제목"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
@@ -100,6 +102,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@drawable/graytextline"
                         android:gravity="center"
                         android:text="좋아요 수 "
                         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
@@ -116,6 +119,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.2"
+                        android:background="@drawable/textline"
                         android:gravity="center"
                         android:text="1위"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -126,6 +130,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="5"
+                        android:background="@drawable/textline"
                         android:gravity="center"
                         android:text="청원 이름"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -136,6 +141,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@drawable/textline"
                         android:gravity="center"
                         android:text="조회수"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -152,6 +158,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="0.2"
+                        android:background="@drawable/textline"
                         android:gravity="center"
                         android:text="2위"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -162,6 +169,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="5"
+                        android:background="@drawable/textline"
                         android:gravity="center"
                         android:text="청원이름"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -172,6 +180,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@drawable/textline"
                         android:gravity="center"
                         android:text="조회수"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -187,6 +196,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.2"
+                        android:background="@drawable/textline"
                         android:gravity="center"
                         android:text="3위"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -197,6 +207,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="5"
+                        android:background="@drawable/textline"
                         android:gravity="center"
                         android:text="청원이름"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -207,6 +218,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:background="@drawable/textline"
                         android:gravity="center"
                         android:text="조휘수"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -249,12 +261,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.2"
+                        android:background="@drawable/graytextline"
                         android:gravity="center"
-                        android:text="NO."
+                        android:text="수위"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
                     <TextView
                         android:id="@+id/textView4"
+                        android:background="@drawable/graytextline"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="5"
@@ -265,6 +279,7 @@
                     <TextView
                         android:id="@+id/textView3"
                         android:layout_width="match_parent"
+                        android:background="@drawable/graytextline"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
@@ -281,6 +296,7 @@
                     <TextView
                         android:id="@+id/textView5"
                         android:layout_width="match_parent"
+                        android:background="@drawable/textline"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.2"
                         android:gravity="center"
@@ -292,6 +308,7 @@
                         android:id="@+id/textView8"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/textline"
                         android:layout_weight="5"
                         android:gravity="center"
                         android:text="청원 이름"
@@ -305,6 +322,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="조회수"
+                        android:background="@drawable/textline"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="#000000" />
 
@@ -321,6 +339,7 @@
                         android:layout_weight="0.2"
                         android:gravity="center"
                         android:text="2위"
+                        android:background="@drawable/textline"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="#000000" />
 
@@ -331,12 +350,14 @@
                         android:layout_weight="5"
                         android:gravity="center"
                         android:text="청원이름"
+                        android:background="@drawable/textline"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="#000000" />
 
                     <TextView
                         android:id="@+id/textView10"
                         android:layout_width="wrap_content"
+                        android:background="@drawable/textline"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:gravity="center"
@@ -354,6 +375,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="0.2"
+                        android:background="@drawable/textline"
                         android:gravity="center"
                         android:text="3위"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
@@ -366,6 +388,7 @@
                         android:layout_weight="5"
                         android:gravity="center"
                         android:text="청원이름"
+                        android:background="@drawable/textline"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="#000000" />
 
@@ -376,6 +399,7 @@
                         android:layout_weight="1"
                         android:gravity="center"
                         android:text="조휘수"
+                        android:background="@drawable/textline"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="#000000" />
 
