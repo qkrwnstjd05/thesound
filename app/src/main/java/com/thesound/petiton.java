@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -18,11 +19,16 @@ import java.util.Date;
 import java.util.List;
 
 public class petiton extends AppCompatActivity {
+    EditText ediTextTextMultiLine;
+    EditText ediTextTextMultiLine2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_petiton);
+
+        ediTextTextMultiLine = (EditText) findViewById(R.id.editTextTextMultiLine);
+        ediTextTextMultiLine2 = (EditText) findViewById(R.id.editTextTextMultiLine2);
 
         String studentUid=FirebaseAuth.getInstance().getCurrentUser().getUid();
         Button b1=(Button) findViewById(R.id.button12);

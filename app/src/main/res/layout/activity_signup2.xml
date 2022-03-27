@@ -116,9 +116,14 @@
                     android:id="@+id/button15"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:layout_centerHorizontal="false"
+                    android:layout_gravity="center_horizontal"
                     android:layout_marginHorizontal="35dp"
                     android:layout_marginTop="30dp"
-                    android:text="Button" />
+                    android:backgroundTint="#3D4EFE"
+                    android:text="가입하기"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </ScrollView>
 
