@@ -4,56 +4,56 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
-        <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/drawable/andjsrk.xml" value="0.1" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/drawable/botten2.xml" value="0.1" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/drawable/button.xml" value="0.1" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/drawable/color.xml" value="0.17777777777777778" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/drawable/graytextline.xml" value="0.2074074074074074" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/drawable/home.xml" value="0.36564102564102563" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/drawable/home1.xml" value="0.1962962962962963" />
-        <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/drawable/ic_baseline_account_circle_24.xml" value="0.22870370370370371" />
-        <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/drawable/ic_baseline_all_inbox_24.xml" value="0.22870370370370371" />
-        <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/drawable/ic_baseline_fingerprint_24.xml" value="0.22870370370370371" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.36564102564102563" />
-        <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/drawable/ic_baseline_mic_24.xml" value="0.22870370370370371" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/drawable/ic_baseline_move_to_inbox_24.xml" value="0.20833333333333334" />
-        <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/drawable/ic_baseline_remove_red_eye_24.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.36564102564102563" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/drawable/ic_baseline_square_24.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/drawable/lbutten.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/drawable/obutten.xml" value="0.1" />
-        <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/drawable/textline.xml" value="0.1" />
-        <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_ask2.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_ask2.xml" value="0.35520833333333335" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_ask_o.xml" value="0.35520833333333335" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_ask_x.xml" value="0.35520833333333335" />
-        <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_asksee.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_asksee.xml" value="0.35520833333333335" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_login.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_login2.xml" value="0.34148550724637683" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_main2.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_main3.xml" value="0.34601449275362317" />
-        <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_petiton.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_seeanswer.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_signup1.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_signup2.xml" value="0.35520833333333335" />
-        <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/answerpage.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_petiton.xml" value="0.35520833333333335" />
+        <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_seeanswer.xml" value="0.35144927536231885" />
+        <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_signup1.xml" value="0.34601449275362317" />
+        <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/answerpage.xml" value="0.35520833333333335" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/ask1.xml" value="0.35520833333333335" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/dlatlqhrhksgka.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/fingerprintpage.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/item.xml" value="0.32382246376811596" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/petitionboard.xml" value="0.5" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/requestforproof.xml" value="0.3333333333333333" />
-        <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/seepetition.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/soundtrack.xml" value="0.33061594202898553" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/storagebox.xml" value="0.35520833333333335" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/layout/surch.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/menu/menu.xml" value="0.35520833333333335" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
         <entry key="..\:/Users/hjunk/AndroidStudioProjects/thesound/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_login.xml" value="0.20199275362318841" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_asksee.xml" value="0.1716485507246377" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/user/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_main.xml" value="0.20199275362318841" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_main2.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_petiton.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_seeanswer.xml" value="0.24320652173913043" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_signup1.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/thesound/app/src/main/res/layout/activity_signup2.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/thesound/app/src/main/res/layout/answerpage.xml" value="0.264" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/thesound/app/src/main/res/layout/requestforproof.xml" value="0.1716485507246377" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/thesound/app/src/main/res/layout/surch.xml" value="0.18432971014492755" />
       </map>
     </option>
   </component>
