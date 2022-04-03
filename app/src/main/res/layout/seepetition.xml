@@ -24,14 +24,16 @@
                     android:layout_height="match_parent"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:text="청원 확인한는데" />
+                    android:gravity="center"
+                    android:text="청원 게시판"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
                 <ImageView
                     android:id="@+id/imageView11"
                     android:layout_width="171dp"
                     android:layout_height="63dp"
                     android:layout_marginTop="10dp"
-                    app:srcCompat="@drawable/logomain" />
+                    app:srcCompat="@drawable/resource__" />
 
             </LinearLayout>
 
