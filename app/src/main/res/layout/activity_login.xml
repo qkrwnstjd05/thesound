@@ -19,58 +19,16 @@
         tools:layout_editor_absoluteX="58dp"
         tools:layout_editor_absoluteY="16dp" />
 
-    <LinearLayout
-        android:layout_width="320dp"
-        android:layout_height="60dp"
-        android:layout_below="@id/imageView2"
-        android:layout_centerInParent="true"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal">
-
-        <Button
-            android:layout_width="155dp"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="10dp"
-            android:backgroundTint="#6774FF"
-            android:text="학생용"
-            android:textSize="16sp"
-            tools:layout_editor_absoluteX="192dp"
-            tools:layout_editor_absoluteY="277dp" />
-
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="155dp"
-            android:layout_height="match_parent"
-            android:backgroundTint="#CDD1FF"
-            android:text="학교용"
-            android:textColor="@color/black"
-            android:textSize="16sp" />
-
-    </LinearLayout>
-
     <EditText
         android:id="@+id/loginId"
         android:layout_width="350dp"
         android:layout_height="55dp"
-        android:layout_below="@id/imageView2"
+        android:layout_below="@id/textView54"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="60dp"
         android:ems="10"
         android:hint="  아이디"
         android:inputType="textPersonName" />
-
-    <Button
-        android:id="@+id/button3"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/imageView2"
-        android:layout_marginLeft="300dp"
-        android:layout_marginTop="115dp"
-        android:backgroundTint="@color/white"
-        android:text="X"
-        android:textColor="#4C4C4C" />
 
     <EditText
         android:id="@+id/loginPw"
@@ -81,18 +39,6 @@
         android:ems="10"
         android:hint="  비밀번호"
         android:inputType="textPersonName" />
-
-    <Button
-        android:id="@+id/button4"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/button3"
-        android:layout_marginLeft="300dp"
-        android:layout_marginTop="5dp"
-        android:backgroundTint="@color/white"
-        android:text="X"
-        android:textColor="#4C4C4C" />
 
     <Button
         android:id="@+id/button6"
@@ -136,5 +82,18 @@
             android:textColor="#3D4EFE"
             android:textSize="20sp" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="144dp"
+        android:layout_height="67dp"
+        android:layout_below="@id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="로그인"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        android:textSize="40dp" />
 
 </RelativeLayout>

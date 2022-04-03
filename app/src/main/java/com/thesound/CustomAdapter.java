@@ -2,6 +2,8 @@ package com.thesound;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import android.content.Intent;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.LayoutInflater;
@@ -62,11 +64,22 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
         viewholder.name.setGravity(Gravity.CENTER);
         viewholder.view.setGravity(Gravity.CENTER);
 
-
-
         viewholder.num.setText(mList.get(position).getNum());
         viewholder.name.setText(mList.get(position).getName());
         viewholder.view.setText(mList.get(position).getView());
+        View.OnClickListener onclickListener = new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), seeanswer.class);
+                intent.putExtra("key",mList.get(position).getKey());
+                view.getContext().startActivity(intent);
+            }
+        };
+
+        viewholder.num.setOnClickListener(onclickListener);
+        viewholder.name.setOnClickListener(onclickListener);
+        viewholder.view.setOnClickListener(onclickListener);
+
     }
 
     @Override

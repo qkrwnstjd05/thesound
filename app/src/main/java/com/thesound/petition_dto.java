@@ -44,5 +44,80 @@ public class petition_dto {
 
         return map;
     }
+    public int getLike() {
+        return like;
+    }
+
+    public void setLike(int like) {
+        this.like = like;
+    }
+
+    public List getLikes() {
+        return likes;
+    }
+
+    public void setLikes(List likes) {
+        this.likes = likes;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public String getStudentUid() {
+        return studentUid;
+    }
+
+    public void setStudentUid(String studentUid) {
+        this.studentUid = studentUid;
+    }
+
+    public String getSchoolUid() {
+        return schoolUid;
+    }
+
+    public void setSchoolUid(String schoolUid) {
+        this.schoolUid = schoolUid;
+    }
+
+    public String getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(Boolean answer) {
+        isAnswer = answer;
+    }
+
+    public String getWhoAnswer() {
+        return whoAnswer;
+    }
+
+    public void setWhoAnswer(String whoAnswer) {
+        this.whoAnswer = whoAnswer;
+    }
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
+    }
+
+    public void setAnswer(String answer) {
+        this.answer = answer;
+    }
 
 }

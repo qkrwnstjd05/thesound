@@ -17,10 +17,12 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Map;
 
 
 public class petitionboard extends AppCompatActivity {
@@ -60,7 +62,10 @@ public class petitionboard extends AppCompatActivity {
                     for (QueryDocumentSnapshot document : task.getResult()) {
 
                         count++;
-                        listDTO data = new listDTO(count + "", document.get("info").toString(), "3");
+                        Map<String,Object> jsonData=document.getData();
+                        Map<String,String> jsonString=(Map<String, String>) jsonData.get("info");
+                        listDTO data = new listDTO(String.valueOf(count), jsonString.get("title"), String.valueOf(jsonString.get("like")),document.getId());
+
                         mArrayList.add(data);
                         mAdapter.notifyDataSetChanged();
                     }

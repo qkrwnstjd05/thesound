@@ -1,12 +1,16 @@
 package com.thesound;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Main extends AppCompatActivity {
     Button button5;
@@ -24,6 +28,8 @@ public class Main extends AppCompatActivity {
     TextView textView10;
     TextView textView13;
     int i = 0;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,5 +64,37 @@ public class Main extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+        BottomNavigationView bottomNavigation  = findViewById(R.id.bottomNav);
+        bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
+
     }
+    BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
+            new BottomNavigationView.OnNavigationItemSelectedListener() {
+                @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                    switch (item.getItemId()) {
+                        case R.id.go_to_all_inbox:
+                            Intent intent=new Intent(getApplicationContext(),petiton.class);
+                            startActivity(intent);
+                            return true;
+                        case R.id.go_to_search:
+                            Intent intent1=new Intent(getApplicationContext(),petiton.class);
+                            startActivity(intent1);
+                            return true;
+                        case R.id.go_to_home:
+                            Intent intent2=new Intent(getApplicationContext(),petiton.class);
+                            startActivity(intent2);
+                            return true;
+                        case R.id.go_to_Profile:
+                            Intent intent3=new Intent(getApplicationContext(),petiton.class);
+                            startActivity(intent3);
+                            return true;
+                        case R.id.go_to_inbox:
+                            Intent intent4=new Intent(getApplicationContext(),petiton.class);
+                            startActivity(intent4);
+                            return true;
+                    }
+                    return false;
+                }
+            };
 }

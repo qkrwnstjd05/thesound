@@ -9,9 +9,11 @@
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="343dp"
-        android:layout_height="140dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_centerHorizontal="true"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="570dp"
         app:srcCompat="@drawable/resource__" />
 
     <TextView

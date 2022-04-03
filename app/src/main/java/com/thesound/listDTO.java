@@ -4,6 +4,7 @@ public class listDTO {
     private String num;
     private String name;
     private String view;
+    private String key;
 
     public String getNum() {
         return num;
@@ -29,10 +30,19 @@ public class listDTO {
         this.view = view;
     }
 
-    public listDTO(String num, String name, String view) {
+    public String getKey() {
+        return key;
+    }
+
+    public void setKey(String key) {
+        this.key = key;
+    }
+
+    public listDTO(String num, String name, String view, String key) {
         this.num = num;
         this.name = name;
         this.view = view;
+        this.key=key;
     }
 }
 
