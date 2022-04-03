@@ -95,7 +95,7 @@
                 android:layout_marginTop="50dp"
                 android:layout_marginRight="60dp"
                 android:layout_marginBottom="20dp"
-                android:backgroundTint="#3D4EFF"
+                android:backgroundTint="#4E6BFF"
                 android:gravity="center"
                 android:text="청원하기"
                 android:textSize="16sp" />
