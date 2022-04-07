@@ -41,58 +41,48 @@
             <TableLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp">
+                android:layout_marginHorizontal="30dp"
+                android:background="#1E90FF">
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#D5D5D5">
+                    android:layout_height="match_parent">
 
                     <TextView
-                        android:id="@+id/textView30"
-                        android:layout_width="match_parent"
+                        android:id="@+id/textView58"
+                        android:layout_width="81dp"
                         android:layout_height="wrap_content"
-                        android:layout_weight="0.2"
-                        android:background="@drawable/graytextline"
-                        android:gravity="center"
-                        android:text="NO."
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-                    <TextView
-                        android:id="@+id/textView55"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="5"
-                        android:background="@drawable/graytextline"
-                        android:gravity="center"
-                        android:text="청원 제목"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-                    <TextView
-                        android:id="@+id/textView0"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="0.7"
-                        android:background="@drawable/graytextline"
-                        android:gravity="center"
-                        android:text="좋아요 수"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
-
-
+                        android:layout_marginEnd="200dp"
+                        android:text="NO.00001"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#000000" />
                 </TableRow>
 
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:id="@+id/textView59"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="아이고 힘들다 살려주세요"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
             </TableLayout>
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycler"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:scrollbarFadeDuration="0"
-                android:scrollbarSize="5dp"
-                android:scrollbarThumbVertical="@android:color/darker_gray"
-                android:scrollbars="vertical" />
         </LinearLayout>
     </ScrollView>
 
