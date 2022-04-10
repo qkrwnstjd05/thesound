@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".Main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNav">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="300dp"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                app:srcCompat="@drawable/resource__" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button5"
+                android:layout_width="157dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button"
+                android:text="청원 게시판 가기"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#FFFFFF" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button6"
+                android:layout_width="157dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/botten2"
+                android:text="인증 요청 보기"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="우리 학교 청원 top3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#000000"
+                android:textColorHighlight="#572828" />
+
+            <TableLayout
+                android:id="@+id/schooltop3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="20dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#D5D5D5">
+
+                    <TextView
+                        android:id="@+id/textView30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:text="순위"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <TextView
+                        android:id="@+id/textView55"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:text="청원 제목"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <TextView
+                        android:id="@+id/textView0"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="좋아요 수 "
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:text="1위"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:gravity="center"
+                        android:text="청원 이름"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="조회수"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#000000" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:text="2위"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+
+                        android:gravity="center"
+                        android:text="청원이름"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:gravity="center"
+                        android:text="조회수"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="13dp">
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+
+                        android:gravity="center"
+                        android:text="3위"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+
+                        android:gravity="center"
+                        android:text="청원이름"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+
+                        android:gravity="center"
+                        android:text="조휘수"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#000000" />
+
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="21dp"
+                android:text="전국 학교 청원 top3"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#000000" />
+
+            <TableLayout
+                android:id="@+id/ourschooltop3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#D5D5D5">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:background="@drawable/graytextline"
+                        android:gravity="center"
+                        android:text="수위"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/graytextline"
+                        android:gravity="center"
+                        android:text="청원 제목"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/graytextline"
+                        android:gravity="center"
+                        android:text="좋아요 수"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:background="@drawable/textline"
+                        android:gravity="center"
+                        android:text="1위"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/textView8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/textline"
+                        android:gravity="center"
+                        android:text="청원 이름"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/textline"
+                        android:gravity="center"
+                        android:text="조회수"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#000000" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.2"
+                        android:background="@drawable/textline"
+                        android:gravity="center"
+                        android:text="2위"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/textline"
+                        android:gravity="center"
+                        android:text="청원이름"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/textline"
+                        android:gravity="center"
+                        android:text="조회수"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#000000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="13dp">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:background="@drawable/textline"
+                        android:gravity="center"
+                        android:text="3위"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="5"
+                        android:background="@drawable/textline"
+                        android:gravity="center"
+                        android:text="청원이름"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/textline"
+                        android:gravity="center"
+                        android:text="조휘수"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="#000000" />
+
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        app:itemIconTint="@drawable/color"
+        app:itemTextColor="@drawable/color"
+        app:menu="@menu/menu" />
+
+</RelativeLayout>
