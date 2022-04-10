@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#010E7E"
     android:backgroundTint="#FFFFFF"
     tools:context=".signup1">
 
@@ -162,7 +163,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginHorizontal="35dp"
                     android:layout_marginTop="30dp"
-                    android:backgroundTint="#3D4EFE"
+                    android:backgroundTint="#1E90FF"
                     android:text="가입하기"
                     android:textSize="16sp"
                     android:textStyle="bold" />

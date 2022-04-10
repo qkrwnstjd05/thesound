@@ -37,7 +37,7 @@
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="40dp"
                 android:layout_marginRight="40dp"
-                android:background="#808080"
+                android:background="@drawable/hii"
                 android:orientation="vertical">
 
                 <TextView
@@ -63,7 +63,8 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginRight="10dp"
                         android:layout_weight="1"
-                        android:text="Button"
+                        android:background="@drawable/sometingblue"
+                        android:text="다시돌아가"
                         android:textColor="#FFFFFF" />
 
                     <androidx.appcompat.widget.AppCompatButton
@@ -73,7 +74,7 @@
                         android:layout_marginRight="10dp"
                         android:layout_weight="1"
                         android:background="@drawable/button"
-                        android:text="Button"
+                        android:text="확인"
                         android:textColor="#FFFFFF" />
                 </LinearLayout>
             </LinearLayout>

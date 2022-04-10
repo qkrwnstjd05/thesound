@@ -134,7 +134,7 @@
                 android:layout_marginTop="30dp"
                 android:layout_marginRight="100dp"
                 android:layout_marginBottom="30dp"
-                android:backgroundTint="#3D4EFE"
+                android:backgroundTint="#010E7E"
                 android:text="답변하기" />
 
         </LinearLayout>

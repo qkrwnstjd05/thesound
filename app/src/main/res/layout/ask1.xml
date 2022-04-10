@@ -43,7 +43,7 @@
         android:layout_below="@id/textView14"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:backgroundTint="#3D4EFE"
+        android:backgroundTint="#1E90FF"
         android:text="인증요청하기"
         android:textSize="20sp" />
 </RelativeLayout>
