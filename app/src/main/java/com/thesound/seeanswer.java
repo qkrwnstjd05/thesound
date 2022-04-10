@@ -71,11 +71,16 @@ public class seeanswer extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), jsonString.toString(), Toast.LENGTH_LONG).show();
                         //Date asdf = new Date(jsonString.get("createDate").toString());
                         /*                 Sample                     */
-                        Date asdf = new Date(System.currentTimeMillis());
-                        //시간 추가하는것 해야합니다.
-                        petition_dto data = new petition_dto(Integer.valueOf(jsonString.get("like").toString()), Arrays.asList(jsonString.get("likes").toString()) ,jsonString.get("title").toString(),jsonString.get("description").toString(),jsonString.get("studentUid").toString(),jsonString.get("schoolUid").toString(),jsonString.get("answer").toString(),Boolean.valueOf(jsonString.get("isAnswer").toString()),jsonString.get("whoAnswer").toString(),asdf);
-                        //int like, List likes, String title, String description, String studentUid, String schoolUid,String answer, Boolean isAnswer, String whoAnswer, Date createDate
+                        //String date1 = jsonString.get("createDate").toString();
+                        Date date1=new Date();
+                        petition_dto data = new petition_dto(Integer.valueOf(jsonString.get("like").toString()), Arrays.asList(jsonString.get("likes").toString()) ,jsonString.get("title").toString(),jsonString.get("description").toString(),jsonString.get("studentUid").toString(),jsonString.get("schoolUid").toString(),jsonString.get("answer").toString(),Boolean.valueOf(jsonString.get("isAnswer").toString()),jsonString.get("whoAnswer").toString(),date1);
                         petitiondetails.setText(data.getDescription());
+                        Teachersname.setText(data.getWhoAnswer());
+                        teachersanswer.setText(data.getAnswer());
+                        Petitionername.setText(data.getStudentUid());
+                        petitiondetails.setText(data.getTitle());
+
+                        //int like, List likes, String title, String description, String studentUid, String schoolUid,String answer, Boolean isAnswer, String whoAnswer, Date createDate
 
                     } else {
                         //Log.d(TAG, "No such document");
