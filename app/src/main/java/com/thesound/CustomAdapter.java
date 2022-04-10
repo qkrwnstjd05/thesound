@@ -43,7 +43,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
     public CustomViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
 
         View view = LayoutInflater.from(viewGroup.getContext())
-                .inflate(R.layout.item, viewGroup, false);
+                .inflate(R.layout.item2, viewGroup, false);
 
         CustomViewHolder viewHolder = new CustomViewHolder(view);
 
@@ -64,7 +64,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
         viewholder.name.setGravity(Gravity.CENTER);
         viewholder.view.setGravity(Gravity.CENTER);
 
-        viewholder.num.setText(mList.get(position).getNum());
+        viewholder.num.setText("NO."+mList.get(position).getNum());
         viewholder.name.setText(mList.get(position).getName());
         viewholder.view.setText(mList.get(position).getView());
         View.OnClickListener onclickListener = new View.OnClickListener() {

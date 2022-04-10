@@ -19,7 +19,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_above="@id/bottomNav"
-        android:layout_below="@id/imageView14">
+        android:layout_below="@id/imageView14"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="-3dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,50 +45,12 @@
                 android:text="청원 게시판"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
-            <TableLayout
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginHorizontal="30dp"
-                android:background="#1E90FF">
+                android:layout_height="match_parent" />
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
 
-                    <TextView
-                        android:id="@+id/textView58"
-                        android:layout_width="81dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginEnd="200dp"
-                        android:text="NO.00001"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="#000000" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp">
-
-                    <TextView
-                        android:id="@+id/textView59"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="center"
-                        android:text="아이고 힘들다 살려주세요"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="#000000" />
-                </TableRow>
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-            </TableLayout>
 
         </LinearLayout>
     </ScrollView>
