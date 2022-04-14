@@ -50,6 +50,7 @@
         android:layout_marginTop="30dp"
         android:backgroundTint="#1E90FF"
         android:text="로그인"
+        android:textColor="@color/white"
         android:textSize="20sp" />
 
     <LinearLayout
@@ -68,7 +69,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/white"
             android:text="학생 회원가입"
-            android:textColor="#3D4EFE"
+            android:textColor="#010E7E"
             android:textSize="20sp" />
 
         <Button
@@ -79,7 +80,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/white"
             android:text="학교 회원가입"
-            android:textColor="#3D4EFE"
+            android:textColor="#010E7E"
             android:textSize="20sp" />
     </LinearLayout>
 

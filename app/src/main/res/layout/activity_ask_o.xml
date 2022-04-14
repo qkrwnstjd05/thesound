@@ -41,7 +41,7 @@
         android:layout_below="@id/textView27"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="80dp"
-        android:backgroundTint="#3D4EFE"
+        android:backgroundTint="#010E7E"
         android:text="로그인하기"
         android:textSize="20sp" />
 </RelativeLayout>

@@ -64,7 +64,8 @@
                         android:layout_marginRight="10dp"
                         android:layout_weight="1"
                         android:background="@drawable/sometingblue"
-                        android:text="다시돌아가"
+                        android:text="거절"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="#FFFFFF" />
 
                     <androidx.appcompat.widget.AppCompatButton
@@ -74,7 +75,8 @@
                         android:layout_marginRight="10dp"
                         android:layout_weight="1"
                         android:background="@drawable/button"
-                        android:text="확인"
+                        android:text="수락"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="#FFFFFF" />
                 </LinearLayout>
             </LinearLayout>
