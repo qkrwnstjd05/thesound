@@ -74,15 +74,15 @@ public class Main extends AppCompatActivity {
                 @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                     switch (item.getItemId()) {
                         case R.id.go_to_all_inbox:
-                            Intent intent=new Intent(getApplicationContext(),petiton.class);
+                            Intent intent=new Intent(getApplicationContext(),petitionboard.class);
                             startActivity(intent);
                             return true;
                         case R.id.go_to_search:
-                            Intent intent1=new Intent(getApplicationContext(),petiton.class);
+                            Intent intent1=new Intent(getApplicationContext(),surch.class);
                             startActivity(intent1);
                             return true;
                         case R.id.go_to_home:
-                            Intent intent2=new Intent(getApplicationContext(),petiton.class);
+                            Intent intent2=new Intent(getApplicationContext(),Main.class);
                             startActivity(intent2);
                             return true;
                         case R.id.go_to_Profile:
@@ -90,7 +90,7 @@ public class Main extends AppCompatActivity {
                             startActivity(intent3);
                             return true;
                         case R.id.go_to_inbox:
-                            Intent intent4=new Intent(getApplicationContext(),petiton.class);
+                            Intent intent4=new Intent(getApplicationContext(),storagebox.class);
                             startActivity(intent4);
                             return true;
                     }
