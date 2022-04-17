@@ -49,7 +49,7 @@
                 android:inputType="textMultiLine"
                 android:maxLength="50"
                 android:textColor="#000000"
-                android:textColorHint="#000000"
+                android:textColorHint="#858585"
                 android:textSize="20sp"
                 android:textStyle="normal" />
 
