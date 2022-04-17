@@ -60,7 +60,7 @@ public class Main extends AppCompatActivity {
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(Main.this, storagebox.class);
+                Intent i = new Intent(Main.this, petitionboard.class);
                 startActivity(i);
             }
         });
