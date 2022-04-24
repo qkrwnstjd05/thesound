@@ -25,8 +25,8 @@
         app:itemTextColor="@drawable/color"/>
     <item
         android:id="@+id/go_to_our_school_bulletin_board"
-        android:icon="@drawable/home1"
-        android:title="홈"
+        android:icon="@drawable/chat_chatting_communication_conversation_email_mail_message_icon_123226"
+        android:title="답변된 청원"
         app:showAsAction="always"
         app:itemIconTint="@drawable/color"
         app:itemTextColor="@drawable/color"/>

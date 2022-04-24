@@ -48,7 +48,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="50dp"
         android:layout_marginTop="30dp"
-        android:backgroundTint="#1E90FF"
+        android:backgroundTint="#010E7E"
         android:text="로그인"
         android:textColor="@color/white"
         android:textSize="20sp" />

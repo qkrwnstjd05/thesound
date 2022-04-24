@@ -15,7 +15,7 @@
         android:text="NO.00001"
         android:textAllCaps="false"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#FFFFFF" />
+        android:textColor="#010E7E" />
 
     <TextView
         android:id="@+id/textView_view"
@@ -25,7 +25,7 @@
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="20dp"
         android:text="by 누구누구"
-        android:textColor="#FFFFFF" />
+        android:textColor="#010E7E" />
 
     <TextView
         android:id="@+id/textView_name"
@@ -35,7 +35,7 @@
         android:gravity="center"
         android:text="아이고 힘들다 살려주세요"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#FFFFFF" />
+        android:textColor="#010E7E" />
 
     <TextView
         android:id="@+id/textView60"
@@ -45,5 +45,5 @@
         android:layout_marginRight="16dp"
         android:gravity="right"
         android:text="2020/12/5"
-        android:textColor="#FFFFFF" />
+        android:textColor="#010E7E" />
 </RelativeLayout>
