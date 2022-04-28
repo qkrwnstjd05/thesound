@@ -1,7 +1,7 @@
 <!-- lbutton.xml -->
 <shape xmlns:android="http://schemas.android.com/apk/res/android">
-    <solid android:color="#1E90FF" />
-    <stroke android:color="#1E90FF" android:width="4dp" />
+    <solid android:color="#B8B8B8" />
+    <stroke android:color="#B8B8B8" android:width="4dp" />
     <padding android:left="7dp" android:top="7dp"
         android:right="7dp" android:bottom="7dp" />
     <corners android:radius="5dp" />

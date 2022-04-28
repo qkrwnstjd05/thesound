@@ -22,9 +22,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/textView33"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="13dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginRight="10dp"
         android:layout_marginBottom="60dp">
 
         <LinearLayout
@@ -35,9 +35,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="40dp"
+                android:layout_margin="10dp"
                 android:layout_marginTop="40dp"
-                android:layout_marginRight="40dp"
                 android:background="@drawable/hii"
                 android:orientation="vertical">
 
@@ -46,6 +45,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginRight="30dp"
                     android:gravity="center"
                     android:text="000 인증요청"
@@ -55,6 +55,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop="30dp"
+                    android:layout_marginBottom="10dp"
                     android:orientation="horizontal">
 
                     <androidx.appcompat.widget.AppCompatButton
@@ -67,7 +68,7 @@
                         android:background="@drawable/sometingblue"
                         android:text="거절"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="#FFFFFF" />
+                        android:textColor="#000000" />
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/button14"
@@ -79,6 +80,7 @@
                         android:text="수락"
                         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                         android:textColor="#FFFFFF" />
+
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
