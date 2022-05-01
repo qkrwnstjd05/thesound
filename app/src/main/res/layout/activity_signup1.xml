@@ -66,16 +66,15 @@
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
-                <EditText
+                <Spinner
                     android:id="@+id/stu_sch_name"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
                     android:layout_marginHorizontal="25dp"
                     android:layout_marginTop="15dp"
-                    android:background="@drawable/textline"
-                    android:ems="10"
-                    android:hint=" 학교 이름"
-                    android:inputType="textPersonName" />
+                    android:hint=" 학교 이름" />
+                <!--android:background="@drawable/textline"-->
 
                 <LinearLayout
                     android:layout_width="match_parent"

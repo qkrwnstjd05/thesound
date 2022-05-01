@@ -7,14 +7,6 @@
     android:layout_centerHorizontal="true"
     tools:context=".petiton">
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="343dp"
-        android:layout_height="120dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/resource__" />
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNav"
         android:layout_width="match_parent"
@@ -30,13 +22,21 @@
         android:layout_height="match_parent"
         android:layout_above="@id/bottomNav"
         android:layout_below="@id/imageView10"
-        android:layout_marginTop="7dp"
-        android:layout_marginBottom="-8dp">
+        android:layout_marginTop="-141dp"
+        android:layout_marginBottom="3dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="343dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/resource__" />
 
             <EditText
                 android:id="@+id/editTextTextMultiLine"
@@ -58,8 +58,8 @@
 
             <ImageView
                 android:id="@+id/imageView20"
-                android:layout_width="71dp"
-                android:layout_height="53dp"
+                android:layout_width="75dp"
+                android:layout_height="66dp"
                 android:layout_marginStart="310dp"
                 android:layout_marginTop="10dp"
                 app:srcCompat="@drawable/image_picture_icon_143003" />

@@ -35,14 +35,24 @@ public class petiton extends AppCompatActivity {
 
         String studentUid=FirebaseAuth.getInstance().getCurrentUser().getUid();
         Button b1=(Button) findViewById(R.id.button12);
+        FirebaseFirestore db=FirebaseFirestore.getInstance();
+        /*db.collection("studentUser").document('')
+                .addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void aVoid) {
+                        Toast.makeText(getApplicationContext(), "청원이 완료되었습니다.", Toast.LENGTH_SHORT).show();
+                        Intent i = new Intent(petiton.this, Main.class);
+                        startActivity(i);
+                    }
+                });*/
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Date c = Calendar.getInstance().getTime();
                 List likes=new ArrayList();
-                petition_dto petition_dto=new petition_dto(0,likes,"","",studentUid,"어디학교인지","",false,"",c);
-                FirebaseFirestore db=FirebaseFirestore.getInstance();
-                db.collection("petition").document().set(petition_dto)
+                petition_dto petition_dto=new petition_dto(0,likes,ediTextTextMultiLine.getText().toString(),ediTextTextMultiLine2.getText().toString(),studentUid,"어디학교인지","",false,"",c);
+
+                db.collection("petition").document().set(petition_dto.getInfo())
                         .addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void aVoid) {

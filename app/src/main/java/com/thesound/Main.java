@@ -14,13 +14,13 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Main extends AppCompatActivity {
     Button button5;
-    TextView textView8;
     Button button6;
-    TextView textView32;
-    TextView textView19;
-    TextView textView22;
-    TextView textView7;
-    TextView textView12;
+    TextView weschool_1;
+    TextView weschool_2;
+    TextView weschool_3;
+    TextView wschool_1;
+    TextView wschool_2;
+    TextView wschool_3;
     TextView textView17;
     TextView textView20;
     TextView textView23;
@@ -36,18 +36,18 @@ public class Main extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        textView32 = (TextView) findViewById(R.id.textView32);
-        textView19 = (TextView) findViewById(R.id.textView19);
-        textView22 = (TextView) findViewById(R.id.textView22);
-        textView8 = (TextView) findViewById(R.id.textView8);
-        textView7 = (TextView) findViewById(R.id.textView7);
-        textView12 = (TextView) findViewById(R.id.textView12);
+        /*weschool_1 = (TextView) findViewById(R.id.weschool_1);
+        weschool_2 = (TextView) findViewById(R.id.weschool_2);
+        weschool_3 = (TextView) findViewById(R.id.weschool_3);
+        wschool_1 = (TextView) findViewById(R.id.wschool_1);
+        wschool_2 = (TextView) findViewById(R.id.wschool_2);
+        wschool_3 = (TextView) findViewById(R.id.wschool_3);
         textView17 = (TextView) findViewById(R.id.textView17);
         textView20 = (TextView) findViewById(R.id.textView20);
         textView23 = (TextView) findViewById(R.id.textView23);
         textView9 = (TextView) findViewById(R.id.textView9);
         textView10 = (TextView) findViewById(R.id.textView10);
-        textView13 = (TextView) findViewById(R.id.textView13);
+        textView13 = (TextView) findViewById(R.id.textView13);*/
         button5 = (Button) findViewById(R.id.button5);
         button6 = (Button) findViewById(R.id.button6);
         button5.setOnClickListener(new View.OnClickListener() {
