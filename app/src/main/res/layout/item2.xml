@@ -2,48 +2,42 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="20dp"
+    android:layout_margin="10dp"
     android:background="@drawable/roundsometing">
 
-    <TextView
-        android:id="@+id/textView_num"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="20dp"
-        android:text="NO.00001"
-        android:textAllCaps="false"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#010E7E" />
-
-    <TextView
-        android:id="@+id/textView_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="20dp"
-        android:text="by 누구누구"
-        android:textColor="#010E7E" />
-
-    <TextView
-        android:id="@+id/textView_name"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textView_num"
-        android:gravity="center"
-        android:text="아이고 힘들다 살려주세요"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#010E7E" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/textView60"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/textView_name"
-        android:layout_marginRight="16dp"
-        android:gravity="right"
-        android:text="2020/12/5"
-        android:textColor="#010E7E" />
+        <TextView
+            android:id="@+id/textView_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="2"
+            android:gravity="center"
+            android:text="1"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:text="아이고 힘들다 살려주세요"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#010E7E" />
+
+        <TextView
+            android:id="@+id/textView60"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:ems="5"
+            android:text="2020/12/5"
+            android:textColor="#6A6A6A" />
+    </LinearLayout>
+
 </RelativeLayout>

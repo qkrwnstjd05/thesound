@@ -67,7 +67,7 @@
             <EditText
                 android:id="@+id/editTextTextMultiLine2"
                 android:layout_width="match_parent"
-                android:layout_height="459dp"
+                android:layout_height="250dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
@@ -86,7 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginHorizontal="30dp"
-                android:text='*2주 동안 "좋아요 수"가 전교생의 4%가 넘지 않으면 삭제됩니다.'
+                android:text='*2주 동안 "좋아요 수"가 전교생의 5%가 넘지 않으면 삭제됩니다.'
                 android:textColor="#FF0000" />
 
             <TextView
