@@ -2,11 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <item
-        android:id="@+id/go_to_all_inbox"
-        android:icon="@drawable/ic_baseline_all_inbox_24"
-        android:title="게시판"
-        app:showAsAction="always" />
+
 
     <item
         android:id="@+id/go_to_search"
@@ -14,6 +10,11 @@
         android:title="검색"
         app:showAsAction="always"
         />
+    <item
+    android:id="@+id/go_to_all_bulletin_board"
+    android:icon="@drawable/pngwing_com"
+    android:title="게시판"
+    app:showAsAction="always" />
 
     <item
         android:id="@+id/go_to_home"
@@ -23,12 +24,13 @@
         app:itemIconTint="@drawable/color"
         app:itemTextColor="@drawable/color"/>
     <item
-        android:id="@+id/go_to_Profile"
-        android:icon="@drawable/ic_baseline_person_24"
-        android:title="프로필"
+        android:id="@+id/go_to_our_school_bulletin_board"
+        android:icon="@drawable/chat_chatting_communication_conversation_email_mail_message_icon_123226"
+        android:title="답변된 청원"
         app:showAsAction="always"
         app:itemIconTint="@drawable/color"
         app:itemTextColor="@drawable/color"/>
+
     <item
         android:id="@+id/go_to_inbox"
         android:icon="@drawable/ic_baseline_move_to_inbox_24"

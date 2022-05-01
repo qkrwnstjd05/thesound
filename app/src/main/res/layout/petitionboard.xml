@@ -9,10 +9,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="2dp"
         app:itemIconTint="@drawable/color"
         app:itemTextColor="@drawable/color"
-        app:menu="@menu/menu" />
+        app:menu="@menu/menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
     <ScrollView
         android:id="@+id/rptlvksdla"
@@ -20,8 +21,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@id/bottomNav"
         android:layout_below="@id/imageView14"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="-3dp">
+        android:layout_marginTop="4dp">
 
         <LinearLayout
             android:layout_width="match_parent"

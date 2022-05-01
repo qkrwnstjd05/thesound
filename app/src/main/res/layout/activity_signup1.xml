@@ -18,6 +18,7 @@
             android:layout_width="35dp"
             android:layout_height="35dp"
             android:layout_alignParentTop="true"
+            android:layout_marginTop="2dp"
             android:backgroundTint="@color/white"
             android:text="❮"
             android:textColor="@color/black"
@@ -29,7 +30,9 @@
             android:layout_height="35dp"
             android:layout_centerHorizontal="true"
             android:layout_centerVertical="false"
+            android:layout_marginTop="2dp"
             android:text="회원가입"
+            android:textColor="#000000"
             android:textSize="24sp"
             android:textStyle="bold" />
 
@@ -163,7 +166,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginHorizontal="35dp"
                     android:layout_marginTop="30dp"
-                    android:backgroundTint="#1E90FF"
+                    android:backgroundTint="#010E7E"
                     android:text="가입하기"
                     android:textSize="16sp"
                     android:textStyle="bold" />

@@ -41,7 +41,7 @@
             <EditText
                 android:id="@+id/editTextTextMultiLine"
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
+                android:layout_height="50dp"
                 android:layout_marginHorizontal="30dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/textline"
@@ -56,10 +56,18 @@
                 android:textSize="20sp"
                 android:textStyle="normal" />
 
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="71dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="310dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/image_picture_icon_143003" />
+
             <EditText
                 android:id="@+id/editTextTextMultiLine2"
                 android:layout_width="match_parent"
-                android:layout_height="516dp"
+                android:layout_height="459dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
