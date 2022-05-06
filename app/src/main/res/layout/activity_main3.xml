@@ -161,7 +161,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="5"
                             android:gravity="center"
-                            android:text="조회수"
+                            android:text="좋아요"
                             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:textColor="#000000" />
                     </LinearLayout>
@@ -246,7 +246,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="5"
                             android:gravity="center"
-                            android:text="조회수"
+                            android:text="좋아요"
                             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:textColor="#000000" />
                     </LinearLayout>
@@ -330,7 +330,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="5"
                             android:gravity="center"
-                            android:text="조회수"
+                            android:text="좋아요"
                             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:textColor="#000000" />
                     </LinearLayout>
@@ -441,7 +441,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="5"
                             android:gravity="center"
-                            android:text="조회수"
+                            android:text="좋아요"
                             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:textColor="#000000" />
                     </LinearLayout>
@@ -526,7 +526,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="5"
                             android:gravity="center"
-                            android:text="조회수"
+                            android:text="좋아요"
                             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:textColor="#000000" />
                     </LinearLayout>
@@ -610,7 +610,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="5"
                             android:gravity="center"
-                            android:text="조회수"
+                            android:text="좋아요"
                             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                             android:textColor="#000000" />
                     </LinearLayout>
