@@ -23,7 +23,6 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
         protected TextView name;
         protected TextView view;
 
-
         public CustomViewHolder(View view) {
             super(view);
             this.num = (TextView) view.findViewById(R.id.textView_num);
@@ -32,12 +31,9 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
         }
     }
 
-
     public CustomAdapter(ArrayList<listDTO> list) {
         this.mList = list;
     }
-
-
 
     @Override
     public CustomViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
@@ -49,8 +45,6 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
 
         return viewHolder;
     }
-
-
 
 
     @Override

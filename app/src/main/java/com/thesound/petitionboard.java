@@ -66,9 +66,9 @@ public class petitionboard extends AppCompatActivity {
 
                         count++;
                         Map<String,Object> jsonData=document.getData();
-                        Map<String,String> jsonString=(Map<String, String>) jsonData.get("info");
-                        listDTO data = new listDTO(String.valueOf(count), jsonString.get("title"), String.valueOf(jsonString.get("like")),document.getId());
-
+                        //Map<String,String> jsonString=(Map<String, String>) jsonData.get("title");
+                        listDTO data = new listDTO(String.valueOf(count), jsonData.get("title").toString(), String.valueOf(jsonData.get("like")),document.getId());
+                        Log.d("datatadat",data.toString());
                         mArrayList.add(data);
                         mAdapter.notifyDataSetChanged();
                     }
