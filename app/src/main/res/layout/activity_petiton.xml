@@ -67,11 +67,10 @@
 
             <ImageView
                 android:id="@+id/imageView20"
-                android:layout_width="wrap_content"
-                android:layout_height="66dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="15dp"
-                android:layout_marginRight="325dp"
                 app:srcCompat="@drawable/image_picture_icon_143003" />
 
             <EditText
