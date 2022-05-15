@@ -70,12 +70,13 @@ public class seeanswer extends AppCompatActivity {
                     if (document.exists()) {
                         Map<String,Object> jsonData=document.getData();
                         Map<String,Object> jsonString=(Map<String, Object>) jsonData.get("info");
-                        Toast.makeText(getApplicationContext(), jsonString.toString(), Toast.LENGTH_LONG).show();
+
                         //Date asdf = new Date(jsonString.get("createDate").toString());
                         /*                 Sample                     */
                         //String date1 = jsonString.get("createDate").toString();
+                        Log.d( "test", jsonData.toString());
                         Date date1=new Date();
-                        petition_dto data = new petition_dto(Integer.valueOf(jsonString.get("like").toString()), Arrays.asList(jsonString.get("likes").toString()) ,jsonString.get("title").toString(),jsonString.get("description").toString(),jsonString.get("studentUid").toString(),jsonString.get("schoolUid").toString(),jsonString.get("answer").toString(),Boolean.valueOf(jsonString.get("isAnswer").toString()),jsonString.get("whoAnswer").toString(),date1);
+                        petition_dto data = new petition_dto(Integer.valueOf(jsonData.get("like").toString()), Arrays.asList(jsonData.get("likes").toString()) ,jsonData.get("title").toString(),jsonData.get("description").toString(),jsonData.get("studentUid").toString(),jsonData.get("schoolUid").toString(),jsonData.get("answer").toString(),Boolean.valueOf(jsonData.get("isAnswer").toString()),jsonData.get("whoAnswer").toString(),date1);
                         petitiondetails.setText(data.getDescription());
                         Teachersname.setText(data.getWhoAnswer());
                         teachersanswer.setText(data.getAnswer());

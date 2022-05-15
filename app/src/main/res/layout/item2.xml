@@ -1,43 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    android:background="@drawable/roundsometing">
+    android:background="@drawable/roundsometing"
+    android:orientation="horizontal">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/textView_num"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_weight="2"
+        android:ems="2"
+        android:gravity="center"
+        android:text="NO. 7"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black" />
 
-        <TextView
-            android:id="@+id/textView_num"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="2"
-            android:gravity="center"
-            android:text="1"
-            android:textAllCaps="false"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textColor="@color/black" />
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:ems="10"
+        android:gravity="center"
+        android:text="학교폭력에 당하고 있어요"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#010E7E" />
 
-        <TextView
-            android:id="@+id/textView_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:gravity="center"
-            android:text="아이고 힘들다 살려주세요"
-            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-            android:textColor="#010E7E" />
+    <TextView
+        android:id="@+id/textView_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:ems="5"
+        android:gravity="center"
+        android:text="20124"
+        android:textColor="#000000" />
 
-        <TextView
-            android:id="@+id/textView_view"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:ems="5"
-            android:text="2020/12/5"
-            android:textColor="#6A6A6A" />
-    </LinearLayout>
-
-</RelativeLayout>
+</LinearLayout>

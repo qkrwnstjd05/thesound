@@ -19,10 +19,8 @@
     <ScrollView
         android:id="@+id/afss"
         android:layout_width="match_parent"
-        android:layout_height="673dp"
-        android:layout_above="@id/bottomNav"
-        android:layout_marginTop="-141dp"
-        android:layout_marginBottom="2dp">
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNav">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -56,17 +54,8 @@
                 android:textSize="20sp"
                 android:textStyle="normal" />
 
-            <Spinner
-                android:id="@+id/spinner2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="1"
-                android:spinnerMode="dropdown" />
-
             <ImageView
-                android:id="@+id/imageView20"
+                android:id="@+id/uploadimage"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_marginLeft="20dp"

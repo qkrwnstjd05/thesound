@@ -9,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -24,6 +25,7 @@ import java.util.List;
 public class petiton extends AppCompatActivity {
     EditText ediTextTextMultiLine;
     EditText ediTextTextMultiLine2;
+    private ImageView uploadimage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +34,7 @@ public class petiton extends AppCompatActivity {
 
         ediTextTextMultiLine = (EditText) findViewById(R.id.editTextTextMultiLine);
         ediTextTextMultiLine2 = (EditText) findViewById(R.id.editTextTextMultiLine2);
+        uploadimage= (ImageView)findViewById(R.id.uploadimage);
 
         String studentUid=FirebaseAuth.getInstance().getCurrentUser().getUid();
         Button b1=(Button) findViewById(R.id.button12);
@@ -62,6 +65,7 @@ public class petiton extends AppCompatActivity {
                             }
                         });
             }
+            //엘범에서 사진 끌어오기
         });
         BottomNavigationView bottomNavigation  = findViewById(R.id.bottomNav);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
