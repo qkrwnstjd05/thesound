@@ -20,6 +20,8 @@ public class storagebox extends AppCompatActivity {
 
         BottomNavigationView bottomNavigation  = findViewById(R.id.bottomNav);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
+        MenuItem item = bottomNavigation.getMenu().findItem(R.id.go_to_inbox);
+        item.setChecked(true);
     }
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {

@@ -17,6 +17,8 @@ public class our_school_bullentin_board extends AppCompatActivity {
 
         BottomNavigationView bottomNavigation  = findViewById(R.id.bottomNav);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
+        MenuItem item = bottomNavigation.getMenu().findItem(R.id.go_to_our_school_bulletin_board);
+        item.setChecked(true);
     }
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {

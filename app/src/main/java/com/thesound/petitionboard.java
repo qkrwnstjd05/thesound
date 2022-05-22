@@ -83,6 +83,8 @@ public class petitionboard extends AppCompatActivity {
         });
         BottomNavigationView bottomNavigation  = findViewById(R.id.bottomNav);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
+        MenuItem item = bottomNavigation.getMenu().findItem(R.id.go_to_all_bulletin_board);
+        item.setChecked(true);
     }
 
 

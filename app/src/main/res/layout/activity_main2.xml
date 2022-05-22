@@ -38,7 +38,7 @@
                     android:layout_height="50dp"
                     android:layout_marginRight="10dp"
                     android:background="@drawable/button"
-                    android:text="지금 청원하러 가기"
+                    android:text="지금 건의하러 가기"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     android:textColor="#FFFFFF"
                     android:textStyle="bold" />

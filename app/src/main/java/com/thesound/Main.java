@@ -27,6 +27,7 @@ public class Main extends AppCompatActivity {
     TextView textView9;
     TextView textView10;
     TextView textView13;
+
     int i = 0;
 
 
@@ -67,6 +68,8 @@ public class Main extends AppCompatActivity {
 
         BottomNavigationView bottomNavigation  = findViewById(R.id.bottomNav);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
+        MenuItem item = bottomNavigation.getMenu().findItem(R.id.go_to_home);
+        item.setChecked(true);
 
     }
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =

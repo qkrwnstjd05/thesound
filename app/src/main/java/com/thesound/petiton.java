@@ -7,9 +7,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -27,6 +29,7 @@ public class petiton extends AppCompatActivity {
     EditText ediTextTextMultiLine2;
     private ImageView uploadimage;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,6 +42,7 @@ public class petiton extends AppCompatActivity {
         String studentUid=FirebaseAuth.getInstance().getCurrentUser().getUid();
         Button b1=(Button) findViewById(R.id.button12);
         FirebaseFirestore db=FirebaseFirestore.getInstance();
+
         /*db.collection("studentUser").document('')
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
@@ -48,6 +52,11 @@ public class petiton extends AppCompatActivity {
                         startActivity(i);
                     }
                 });*/
+        Spinner testSpinner = (Spinner)findViewById(R.id.ikmyoung);
+        String[] kinds1 = getResources().getStringArray(R.array.my_array);
+        ArrayAdapter adapter = new ArrayAdapter(getBaseContext(),R.layout.spinneritem_item,kinds1);
+        adapter.setDropDownViewResource((R.layout.spinneritem_item));
+        testSpinner.setAdapter(adapter);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -69,6 +78,7 @@ public class petiton extends AppCompatActivity {
         });
         BottomNavigationView bottomNavigation  = findViewById(R.id.bottomNav);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
+
     }
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {

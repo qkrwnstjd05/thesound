@@ -54,6 +54,15 @@
                 android:textSize="20sp"
                 android:textStyle="normal" />
 
+            <Spinner
+                android:id="@+id/ikmyoung"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:spinnerMode="dropdown"/>
+
             <ImageView
                 android:id="@+id/uploadimage"
                 android:layout_width="60dp"
