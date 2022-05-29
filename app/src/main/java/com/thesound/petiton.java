@@ -52,11 +52,9 @@ public class petiton extends AppCompatActivity {
                         startActivity(i);
                     }
                 });*/
-        Spinner testSpinner = (Spinner)findViewById(R.id.ikmyoung);
-        String[] kinds1 = getResources().getStringArray(R.array.my_array);
-        ArrayAdapter adapter = new ArrayAdapter(getBaseContext(),R.layout.spinneritem_item,kinds1);
-        adapter.setDropDownViewResource((R.layout.spinneritem_item));
-        testSpinner.setAdapter(adapter);
+
+
+
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

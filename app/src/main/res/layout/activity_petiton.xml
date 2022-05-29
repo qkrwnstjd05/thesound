@@ -45,23 +45,15 @@
                 android:background="@drawable/textline"
                 android:ems="10"
                 android:gravity="center_vertical"
-                android:hint="청원 제목을 입력해주세요."
+                android:hint="건의 제목을 입력해주세요."
                 android:inputType="textMultiLine"
                 android:maxLength="50"
                 android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="#000000"
                 android:textColorHint="#858585"
                 android:textSize="20sp"
                 android:textStyle="normal" />
-
-            <Spinner
-                android:id="@+id/ikmyoung"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginLeft="100dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="30dp"
-                android:spinnerMode="dropdown"/>
 
             <ImageView
                 android:id="@+id/uploadimage"
@@ -74,7 +66,7 @@
             <EditText
                 android:id="@+id/editTextTextMultiLine2"
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="250dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="20dp"
@@ -85,6 +77,8 @@
                 android:hint=" 내용을 입력해주세요(*자세히 입력해주세요)"
                 android:inputType="textMultiLine"
                 android:maxLength="2000"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="#000000"
                 android:textColorHint="#FF0000" />
 
@@ -115,7 +109,7 @@
                 android:layout_marginBottom="20dp"
                 android:backgroundTint="#010E7E"
                 android:gravity="center"
-                android:text="청원하기"
+                android:text="건의하기"
                 android:textSize="16sp" />
 
         </LinearLayout>

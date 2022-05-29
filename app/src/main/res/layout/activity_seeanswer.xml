@@ -33,7 +33,7 @@
                 android:layout_marginRight="30dp"
                 android:drawableEnd="@drawable/ic_baseline_build_24"
                 android:drawableTint="#FF8080"
-                android:text="청원 제목"
+                android:text="건의 제목"
                 android:textColor="#000000"
                 android:textSize="28sp"
                 android:textStyle="bold" />
@@ -98,10 +98,13 @@
                 <TextView
                     android:id="@+id/petitiondetails"
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@drawable/andjsrk"
+                    android:includeFontPadding="false"
+                    android:padding="10dp"
                     android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     android:textColor="#000000" />
 
             </LinearLayout>
@@ -129,27 +132,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginLeft="20dp"
                     android:layout_marginRight="100dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/textView49"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:text="선생님 이름:"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="#000000" />
-
-                    <TextView
-                        android:id="@+id/Teachersname"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="0.5"
-                        android:text="TextView"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-                        android:textColor="#000000" />
-
-                </LinearLayout>
+                    android:orientation="horizontal"/>
 
                 <TextView
                     android:id="@+id/textView6"
@@ -172,10 +155,12 @@
                 <TextView
                     android:id="@+id/teachersanswer"
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@drawable/andjsrk"
+                    android:padding="10dp"
                     android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     android:textColor="#000000" />
 
             </LinearLayout>

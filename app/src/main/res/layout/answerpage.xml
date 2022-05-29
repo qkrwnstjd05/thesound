@@ -32,7 +32,7 @@
                 android:layout_marginRight="30dp"
                 android:drawableEnd="@drawable/ic_baseline_build_24"
                 android:drawableTint="#FF8080"
-                android:text="청원 제목"
+                android:text="건의 제목"
                 android:textColor="#000000"
                 android:textSize="28sp"
                 android:textStyle="bold" />
@@ -59,7 +59,7 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center_vertical"
-                    android:text="TextView"
+                    android:text="익명"
                     android:textColor="@color/black"
                     android:textSize="17sp" />
 
@@ -77,10 +77,12 @@
                 <TextView
                     android:id="@+id/petitiondetails"
                     android:layout_width="match_parent"
-                    android:layout_height="250dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@drawable/andjsrk"
+                    android:padding="10dp"
                     android:text="TextView"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     android:textColor="#000000" />
             </LinearLayout>
 
@@ -96,32 +98,6 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="100dp"
-                android:layout_marginBottom="20dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-
-                    android:text="교사명:"
-                    android:textColor="#000000"
-                    android:textSize="20sp" />
-
-                <TextView
-                    android:id="@+id/textView6"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:text="TextView"
-                    android:textColor="#000000"
-                    android:textSize="17sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
@@ -131,14 +107,15 @@
                 <EditText
                     android:id="@+id/editTextTextPersonName"
                     android:layout_width="wrap_content"
-                    android:layout_height="250dp"
+                    android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@drawable/andjsrk"
                     android:ems="10"
                     android:gravity="top"
                     android:hint="*이 청원의 대한 답변을 써주세요"
                     android:inputType="textMultiLine"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:padding="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     android:textColor="#000000"
                     android:textColorHint="#FF0000" />
             </LinearLayout>

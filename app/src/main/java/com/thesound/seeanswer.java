@@ -55,7 +55,6 @@ public class seeanswer extends AppCompatActivity {
 
 
         petitiondetails= (TextView)findViewById(R.id.petitiondetails);
-        Teachersname=(TextView) findViewById(R.id.Teachersname);
         teachersanswer=(TextView) findViewById(R.id.teachersanswer);
         Petitionername=(TextView) findViewById(R.id.Petitionername);
         petitiontitle=(TextView) findViewById(R.id.petitiontitle);
@@ -78,10 +77,9 @@ public class seeanswer extends AppCompatActivity {
                         Date date1=new Date();
                         petition_dto data = new petition_dto(Integer.valueOf(jsonData.get("like").toString()), Arrays.asList(jsonData.get("likes").toString()) ,jsonData.get("title").toString(),jsonData.get("description").toString(),jsonData.get("studentUid").toString(),jsonData.get("schoolUid").toString(),jsonData.get("answer").toString(),Boolean.valueOf(jsonData.get("isAnswer").toString()),jsonData.get("whoAnswer").toString(),date1);
                         petitiondetails.setText(data.getDescription());
-                        Teachersname.setText(data.getWhoAnswer());
                         teachersanswer.setText(data.getAnswer());
-                        Petitionername.setText(data.getStudentUid());
-                        petitiondetails.setText(data.getTitle());
+                        Petitionername.setText("익명");
+                        petitiontitle.setText(data.getTitle());
 
                         //int like, List likes, String title, String description, String studentUid, String schoolUid,String answer, Boolean isAnswer, String whoAnswer, Date createDate
 
