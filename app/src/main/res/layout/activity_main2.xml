@@ -51,7 +51,7 @@
                     android:layout_centerVertical="false"
                     android:layout_marginLeft="10dp"
                     android:background="@drawable/botten2"
-                    android:text="청원 게시판 가기"
+                    android:text="건의 게시판 가기"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     android:textColor="#010E7E"
                     android:textStyle="bold" />
@@ -109,14 +109,6 @@
                             android:layout_weight="1"
                             android:orientation="horizontal">
 
-                            <ImageView
-                                android:id="@+id/imageView15"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="0.1"
-                                app:srcCompat="@drawable/ic_baseline_build_24"
-                                app:tint="#FF8080" />
-
                             <TextView
                                 android:id="@+id/weschool_1"
                                 android:layout_width="match_parent"
@@ -124,19 +116,11 @@
                                 android:layout_marginLeft="5dp"
                                 android:layout_weight="1"
                                 android:gravity="center_vertical"
-                                android:text="건의 이름"
+                                android:text="핸드폰 사용 허용해주세요"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                                 android:textColor="#000000" />
                         </LinearLayout>
 
-                        <TextView
-                            android:id="@+id/textView58"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="20dp"
-                            android:layout_weight="1"
-                            android:gravity="center_vertical"
-                            android:text="청원 내용..." />
                     </LinearLayout>
 
                     <LinearLayout
@@ -160,8 +144,8 @@
                             android:layout_height="match_parent"
                             android:layout_weight="5"
                             android:gravity="center"
-                            android:text="조회수"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="304"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
                             android:textColor="#000000" />
                     </LinearLayout>
 
@@ -195,14 +179,6 @@
                             android:layout_weight="1"
                             android:orientation="horizontal">
 
-                            <ImageView
-                                android:id="@+id/imageView16"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="0.1"
-                                app:srcCompat="@drawable/ic_baseline_policy_24"
-                                app:tint="#80FF80" />
-
                             <TextView
                                 android:id="@+id/weschool_2"
                                 android:layout_width="match_parent"
@@ -210,19 +186,11 @@
                                 android:layout_marginLeft="5dp"
                                 android:layout_weight="1"
                                 android:gravity="center_vertical"
-                                android:text="건의 이름"
+                                android:text="만화책 대여하게 해주세요"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                                 android:textColor="#000000" />
                         </LinearLayout>
 
-                        <TextView
-                            android:id="@+id/textView59"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="20dp"
-                            android:layout_weight="1"
-                            android:gravity="center_vertical"
-                            android:text="청원 내용..." />
                     </LinearLayout>
 
                     <LinearLayout
@@ -245,8 +213,8 @@
                             android:layout_height="match_parent"
                             android:layout_weight="5"
                             android:gravity="center"
-                            android:text="조회수"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="225"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
                             android:textColor="#000000" />
                     </LinearLayout>
                 </TableRow>
@@ -279,14 +247,6 @@
                             android:layout_weight="5"
                             android:orientation="horizontal">
 
-                            <ImageView
-                                android:id="@+id/imageView17"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="0.1"
-                                app:srcCompat="@drawable/ic_baseline_class_24"
-                                app:tint="#8080FF" />
-
                             <TextView
                                 android:id="@+id/weschool_3"
                                 android:layout_width="match_parent"
@@ -294,19 +254,11 @@
                                 android:layout_marginLeft="5dp"
                                 android:layout_weight="5"
                                 android:gravity="center_vertical"
-                                android:text="건의 이름"
+                                android:text="급식의 질을 높여주세요"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                                 android:textColor="#000000" />
                         </LinearLayout>
 
-                        <TextView
-                            android:id="@+id/textView61"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="20dp"
-                            android:layout_weight="5"
-                            android:gravity="center_vertical"
-                            android:text="청원 내용..." />
                     </LinearLayout>
 
                     <LinearLayout
@@ -329,8 +281,8 @@
                             android:layout_height="match_parent"
                             android:layout_weight="5"
                             android:gravity="center"
-                            android:text="조회수"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="187"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
                             android:textColor="#000000" />
                     </LinearLayout>
 
@@ -389,14 +341,6 @@
                             android:layout_weight="1"
                             android:orientation="horizontal">
 
-                            <ImageView
-                                android:id="@+id/imageView150"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="0.1"
-                                app:srcCompat="@drawable/ic_baseline_build_24"
-                                app:tint="#FF8080" />
-
                             <TextView
                                 android:id="@+id/wschool_1"
                                 android:layout_width="match_parent"
@@ -404,19 +348,11 @@
                                 android:layout_marginLeft="5dp"
                                 android:layout_weight="1"
                                 android:gravity="center_vertical"
-                                android:text="건의 이름"
+                                android:text="급식의 질을 높여주세요"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                                 android:textColor="#000000" />
                         </LinearLayout>
 
-                        <TextView
-                            android:id="@+id/textView580"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="20dp"
-                            android:layout_weight="1"
-                            android:gravity="center_vertical"
-                            android:text="청원 내용..." />
                     </LinearLayout>
 
                     <LinearLayout
@@ -440,8 +376,8 @@
                             android:layout_height="match_parent"
                             android:layout_weight="5"
                             android:gravity="center"
-                            android:text="조회수"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="613"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
                             android:textColor="#000000" />
                     </LinearLayout>
 
@@ -475,14 +411,6 @@
                             android:layout_weight="1"
                             android:orientation="horizontal">
 
-                            <ImageView
-                                android:id="@+id/imageView160"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="0.1"
-                                app:srcCompat="@drawable/ic_baseline_policy_24"
-                                app:tint="#80FF80" />
-
                             <TextView
                                 android:id="@+id/wschool_2"
                                 android:layout_width="match_parent"
@@ -490,19 +418,11 @@
                                 android:layout_marginLeft="5dp"
                                 android:layout_weight="1"
                                 android:gravity="center_vertical"
-                                android:text="건의 이름"
+                                android:text="책상을 바꿔주세요"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                                 android:textColor="#000000" />
                         </LinearLayout>
 
-                        <TextView
-                            android:id="@+id/textView590"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="20dp"
-                            android:layout_weight="1"
-                            android:gravity="center_vertical"
-                            android:text="청원 내용..." />
                     </LinearLayout>
 
                     <LinearLayout
@@ -525,8 +445,8 @@
                             android:layout_height="match_parent"
                             android:layout_weight="5"
                             android:gravity="center"
-                            android:text="조회수"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="537"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
                             android:textColor="#000000" />
                     </LinearLayout>
                 </TableRow>
@@ -559,14 +479,6 @@
                             android:layout_weight="5"
                             android:orientation="horizontal">
 
-                            <ImageView
-                                android:id="@+id/imageView170"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="0.1"
-                                app:srcCompat="@drawable/ic_baseline_class_24"
-                                app:tint="#8080FF" />
-
                             <TextView
                                 android:id="@+id/wschool_3"
                                 android:layout_width="match_parent"
@@ -574,19 +486,11 @@
                                 android:layout_marginLeft="5dp"
                                 android:layout_weight="5"
                                 android:gravity="center_vertical"
-                                android:text="건의 이름"
+                                android:text="랩 동아리 좀 만들어주세요"
                                 android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                                 android:textColor="#000000" />
                         </LinearLayout>
 
-                        <TextView
-                            android:id="@+id/textView610"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginLeft="20dp"
-                            android:layout_weight="5"
-                            android:gravity="center_vertical"
-                            android:text="청원 내용..." />
                     </LinearLayout>
 
                     <LinearLayout
@@ -609,8 +513,8 @@
                             android:layout_height="match_parent"
                             android:layout_weight="5"
                             android:gravity="center"
-                            android:text="조회수"
-                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="491"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
                             android:textColor="#000000" />
                     </LinearLayout>
 

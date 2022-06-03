@@ -45,6 +45,12 @@
         <activity
             android:name=".login"
             android:exported="true"/>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--메인페이지 시작-->
         <activity
             android:name=".storagebox"
             android:exported="true"/>
@@ -52,12 +58,7 @@
         <activity
             android:name=".Main"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-<!--메인페이지 시작-->
         </activity>
         <activity
             android:name=".petitionboard"
