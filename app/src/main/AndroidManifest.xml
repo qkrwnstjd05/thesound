@@ -44,12 +44,14 @@
             android:exported="false" />
         <activity
             android:name=".login"
-            android:exported="true"/>
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
             <!--메인페이지 시작-->
         <activity
             android:name=".storagebox"
