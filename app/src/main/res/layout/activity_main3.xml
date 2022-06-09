@@ -52,7 +52,7 @@
                     android:layout_centerVertical="false"
                     android:layout_marginLeft="10dp"
                     android:background="@drawable/botten2"
-                    android:text="지금 건의하러 가기"
+                    android:text="건의 게시판 가기"
                     android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                     android:textColor="#010E7E"
                     android:textStyle="bold" />
