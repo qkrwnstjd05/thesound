@@ -2,26 +2,26 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
-        android:id="@+id/go_to_search"
+        android:id="@+id/go_to_search3"
         android:icon="@drawable/ic_baseline_search_24"
         android:title="검색"
         app:showAsAction="always"
         />
     <item
-        android:id="@+id/go_to_all_bulletin_board"
+        android:id="@+id/go_to_all_bulletin_board3"
         android:icon="@drawable/pngwing_com"
         android:title="게시판"
         app:showAsAction="always" />
 
     <item
-        android:id="@+id/go_to_home"
+        android:id="@+id/go_to_home3"
         android:icon="@drawable/home1"
         android:title="홈"
         app:showAsAction="always"
         app:itemIconTint="@drawable/color"
         app:itemTextColor="@drawable/color"/>
     <item
-        android:id="@+id/go_to_our_school_bulletin_board"
+        android:id="@+id/go_to_suggestionan_swered"
         android:icon="@drawable/chat_chatting_communication_conversation_email_mail_message_icon_123226"
         android:title="답변한 건의"
         app:showAsAction="always"
@@ -29,7 +29,7 @@
         app:itemTextColor="@drawable/color"/>
 
     <item
-        android:id="@+id/View_authentication_requests"
+        android:id="@+id/view_authentication_requests"
         android:icon="@drawable/checkbox_marked_icon_138772"
         android:title="인증 요청 보기"
         app:showAsAction="always"

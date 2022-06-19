@@ -11,7 +11,7 @@
         android:layout_alignParentBottom="true"
         app:itemIconTint="@drawable/color"
         app:itemTextColor="@drawable/color"
-        app:menu="@menu/menu">
+        app:menu="@menu/menu2">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
     <ScrollView

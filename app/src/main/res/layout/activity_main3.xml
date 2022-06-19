@@ -629,6 +629,6 @@
         android:layout_marginBottom="2dp"
         app:itemIconTint="@drawable/color"
         app:itemTextColor="@drawable/color"
-        app:menu="@menu/menu" />
+        app:menu="@menu/menu2" />
 
 </RelativeLayout>
