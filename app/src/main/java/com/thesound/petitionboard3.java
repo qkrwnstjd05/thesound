@@ -39,7 +39,7 @@ public class petitionboard3 extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.petitionboard);
+        setContentView(R.layout.petitionboard3);
 
 
 
@@ -81,11 +81,9 @@ public class petitionboard3 extends AppCompatActivity{
         });
         BottomNavigationView bottomNavigation  = findViewById(R.id.bottomNav);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
-        MenuItem item = bottomNavigation.getMenu().findItem(R.id.go_to_all_bulletin_board);
+        MenuItem item = bottomNavigation.getMenu().findItem(R.id.go_to_all_bulletin_board3);
         item.setChecked(true);
     }
-
-
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -114,5 +112,4 @@ public class petitionboard3 extends AppCompatActivity{
                     return false;
                 }
             };
-
 }

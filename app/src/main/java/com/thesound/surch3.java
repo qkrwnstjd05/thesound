@@ -13,11 +13,11 @@ public class surch3 extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.surch);
+        setContentView(R.layout.surch3);
 
         BottomNavigationView bottomNavigation  = findViewById(R.id.bottomNav);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
-        MenuItem item = bottomNavigation.getMenu().findItem(R.id.go_to_search);
+        MenuItem item = bottomNavigation.getMenu().findItem(R.id.go_to_search3);
         item.setChecked(true);
     }
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =

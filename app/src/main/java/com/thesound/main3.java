@@ -34,7 +34,7 @@ public class main3 extends AppCompatActivity {
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(main3.this, petitionboard.class);
+                Intent i = new Intent(main3.this, petitionboard3.class);
                 startActivity(i);
             }
         });
@@ -42,7 +42,7 @@ public class main3 extends AppCompatActivity {
 
         BottomNavigationView bottomNavigation  = findViewById(R.id.bottomNav);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
-        MenuItem item = bottomNavigation.getMenu().findItem(R.id.go_to_home);
+        MenuItem item = bottomNavigation.getMenu().findItem(R.id.go_to_home3);
         item.setChecked(true);
     }
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =

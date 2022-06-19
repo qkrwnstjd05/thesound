@@ -19,11 +19,13 @@ import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -33,10 +35,10 @@ import java.util.List;
 import java.util.Map;
 
 public class surch extends AppCompatActivity{
-
     private ArrayList<listDTO> mArrayList;
     private CustomAdapter mAdapter;
     private int count = -1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,19 +55,26 @@ public class surch extends AppCompatActivity{
         item.setChecked(true);
 
         List<String> list = new ArrayList<>();
+        List<String> address = new ArrayList<>();
+
         ArrayAdapter<String> adpater = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list);
         listview.setAdapter(adpater);
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                String data = (String) adapterView.getItemAtPosition(position);
-                Toast.makeText(getApplicationContext(), data, Toast.LENGTH_SHORT).show();
+                //String data = (String) adapterView.getItemAtPosition(position);
+                Log.d("text",address.toString());
+                Intent i = new Intent(surch.this,seeanswer.class);
+                i.putExtra("key",address.get(position));
+                startActivity(i);
+                finish();
             }
         });
         searchBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 adpater.clear();
+                address.clear();
                 final FirebaseFirestore db = FirebaseFirestore.getInstance();
                 db.collection("petition").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
@@ -73,8 +82,11 @@ public class surch extends AppCompatActivity{
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 Map<String,Object> jsonData=document.getData();
+                                Log.d("key",jsonData.toString());
+
                                 if(jsonData.get("title").toString().contains(seartEdit.getText().toString())) {
                                     list.add(jsonData.get("title").toString());
+                                    address.add(document.getId());
                                     adpater.notifyDataSetChanged();
                                 }
                             }
@@ -93,6 +105,7 @@ public class surch extends AppCompatActivity{
                     for (QueryDocumentSnapshot document : task.getResult()) {
                         Map<String,Object> jsonData=document.getData();
                         list.add(jsonData.get("title").toString());
+                        address.add(document.getId());
                         adpater.notifyDataSetChanged();
                     }
                 } else {
