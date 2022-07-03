@@ -31,8 +31,6 @@
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="30dp"
-                android:drawableEnd="@drawable/ic_baseline_build_24"
-                android:drawableTint="#FF8080"
                 android:text="건의 제목"
                 android:textColor="#000000"
                 android:textSize="28sp"
@@ -176,6 +174,6 @@
         android:layout_marginBottom="-1dp"
         app:itemIconTint="@drawable/color"
         app:itemTextColor="@drawable/color"
-        app:menu="@menu/menu" />
+        app:menu="@menu/menu2" />
 
 </RelativeLayout>

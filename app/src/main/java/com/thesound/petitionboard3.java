@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -31,7 +32,7 @@ import java.util.Map;
 
 public class petitionboard3 extends AppCompatActivity{
     private ArrayList<listDTO> mArrayList;
-    private CustomAdapter mAdapter;
+    private CustomAdapter3 mAdapter;
 
     private int count = -1;
 
@@ -42,8 +43,6 @@ public class petitionboard3 extends AppCompatActivity{
         setContentView(R.layout.petitionboard3);
 
 
-
-
         RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.recycler);
         LinearLayoutManager mLinearLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLinearLayoutManager);
@@ -51,7 +50,7 @@ public class petitionboard3 extends AppCompatActivity{
 
         mArrayList = new ArrayList<>();
 
-        mAdapter = new CustomAdapter(mArrayList);
+        mAdapter = new CustomAdapter3(mArrayList);
         mRecyclerView.setAdapter(mAdapter);
 
 
