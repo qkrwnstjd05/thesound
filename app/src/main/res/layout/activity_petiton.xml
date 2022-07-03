@@ -19,10 +19,8 @@
     <ScrollView
         android:id="@+id/afss"
         android:layout_width="match_parent"
-        android:layout_height="673dp"
-        android:layout_above="@id/bottomNav"
-        android:layout_marginTop="-141dp"
-        android:layout_marginBottom="2dp">
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNav">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -47,31 +45,22 @@
                 android:background="@drawable/textline"
                 android:ems="10"
                 android:gravity="center_vertical"
-                android:hint="청원 제목을 입력해주세요."
+                android:hint="건의 제목을 입력해주세요."
                 android:inputType="textMultiLine"
                 android:maxLength="50"
                 android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="#000000"
                 android:textColorHint="#858585"
                 android:textSize="20sp"
                 android:textStyle="normal" />
 
-            <Spinner
-                android:id="@+id/spinner2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="1"
-                android:spinnerMode="dropdown" />
-
             <ImageView
-                android:id="@+id/imageView20"
-                android:layout_width="wrap_content"
-                android:layout_height="66dp"
+                android:id="@+id/uploadimage"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="15dp"
-                android:layout_marginRight="325dp"
                 app:srcCompat="@drawable/image_picture_icon_143003" />
 
             <EditText
@@ -88,6 +77,8 @@
                 android:hint=" 내용을 입력해주세요(*자세히 입력해주세요)"
                 android:inputType="textMultiLine"
                 android:maxLength="2000"
+                android:padding="10dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
                 android:textColor="#000000"
                 android:textColorHint="#FF0000" />
 
@@ -118,7 +109,7 @@
                 android:layout_marginBottom="20dp"
                 android:backgroundTint="#010E7E"
                 android:gravity="center"
-                android:text="청원하기"
+                android:text="건의하기"
                 android:textSize="16sp" />
 
         </LinearLayout>

@@ -1,48 +1,83 @@
 package com.thesound;
+import android.content.Intent;
+import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
-import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
-public class answerpage extends AppCompatActivity {
-    Button button16;
-    EditText editTextTextpetitonanswer;
+public class petitionboard3 extends AppCompatActivity{
+    private ArrayList<listDTO> mArrayList;
+    private CustomAdapter3 mAdapter;
+
+    private int count = -1;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_seeanswer);
+        setContentView(R.layout.petitionboard3);
 
-        editTextTextpetitonanswer = (EditText) findViewById(R.id.editTextTextpetitonanswer);
 
-        String studentUid= FirebaseAuth.getInstance().getCurrentUser().getUid();
-        Button b1=(Button) findViewById(R.id.button16);
-        FirebaseFirestore db=FirebaseFirestore.getInstance();
+        RecyclerView mRecyclerView = (RecyclerView) findViewById(R.id.recycler);
+        LinearLayoutManager mLinearLayoutManager = new LinearLayoutManager(this);
+        mRecyclerView.setLayoutManager(mLinearLayoutManager);
 
-        b1.setOnClickListener(new View.OnClickListener() {
+
+        mArrayList = new ArrayList<>();
+
+        mAdapter = new CustomAdapter3(mArrayList);
+        mRecyclerView.setAdapter(mAdapter);
+
+
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(mRecyclerView.getContext(),
+                mLinearLayoutManager.getOrientation());
+        mRecyclerView.addItemDecoration(dividerItemDecoration);
+
+        final FirebaseFirestore db = FirebaseFirestore.getInstance();
+        db.collection("petition").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
             @Override
-            public void onClick(View view) {
-                //db.collection("petition").document("Er7Qqwkr1PqaWgUsytl6").set("answer").//
+            public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                if (task.isSuccessful()) {
+                    for (QueryDocumentSnapshot document : task.getResult()) {
+
+                        count++;
+                        Map<String,Object> jsonData=document.getData();
+                        //Map<String,String> jsonString=(Map<String, String>) jsonData.get("title");
+                        listDTO data = new listDTO(String.valueOf(count), jsonData.get("title").toString(), String.valueOf(jsonData.get("like")),document.getId());
+                        Log.d("datatadat",data.toString());
+                        mArrayList.add(0,data);
+                        mAdapter.notifyDataSetChanged();
+                    }
+                } else {
+                    Log.w("err", task.getException());
+                }
             }
         });
-
         BottomNavigationView bottomNavigation  = findViewById(R.id.bottomNav);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
         MenuItem item = bottomNavigation.getMenu().findItem(R.id.go_to_all_bulletin_board3);

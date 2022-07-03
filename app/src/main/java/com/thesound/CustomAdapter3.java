@@ -1,8 +1,5 @@
 package com.thesound;
 
-import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.util.TypedValue;
 import android.view.Gravity;
@@ -10,11 +7,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
 
-public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomViewHolder> {
+public class CustomAdapter3 extends RecyclerView.Adapter<CustomAdapter3.CustomViewHolder> {
 
     private ArrayList<listDTO> mList;
 
@@ -31,7 +32,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
         }
     }
 
-    public CustomAdapter(ArrayList<listDTO> list) {
+    public CustomAdapter3(ArrayList<listDTO> list) {
         this.mList = list;
     }
 
@@ -64,7 +65,7 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.CustomView
         View.OnClickListener onclickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), seeanswer.class);
+                Intent intent = new Intent(view.getContext(), seeanswer3.class);
                 intent.putExtra("key",mList.get(position).getKey());
                 view.getContext().startActivity(intent);
             }

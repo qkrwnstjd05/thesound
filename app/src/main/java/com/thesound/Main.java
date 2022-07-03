@@ -27,6 +27,7 @@ public class Main extends AppCompatActivity {
     TextView textView9;
     TextView textView10;
     TextView textView13;
+
     int i = 0;
 
 
@@ -50,6 +51,7 @@ public class Main extends AppCompatActivity {
         textView13 = (TextView) findViewById(R.id.textView13);*/
         button5 = (Button) findViewById(R.id.button5);
         button6 = (Button) findViewById(R.id.button6);
+
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,6 +59,7 @@ public class Main extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -67,6 +70,8 @@ public class Main extends AppCompatActivity {
 
         BottomNavigationView bottomNavigation  = findViewById(R.id.bottomNav);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
+        MenuItem item = bottomNavigation.getMenu().findItem(R.id.go_to_home);
+        item.setChecked(true);
 
     }
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =

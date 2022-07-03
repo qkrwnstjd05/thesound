@@ -12,6 +12,8 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -32,6 +34,7 @@ public class petitionboard extends AppCompatActivity {
 
     private ArrayList<listDTO> mArrayList;
     private CustomAdapter mAdapter;
+
     private int count = -1;
 
 
@@ -39,6 +42,7 @@ public class petitionboard extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.petitionboard);
+
 
 
 
@@ -69,7 +73,7 @@ public class petitionboard extends AppCompatActivity {
                         //Map<String,String> jsonString=(Map<String, String>) jsonData.get("title");
                         listDTO data = new listDTO(String.valueOf(count), jsonData.get("title").toString(), String.valueOf(jsonData.get("like")),document.getId());
                         Log.d("datatadat",data.toString());
-                        mArrayList.add(data);
+                        mArrayList.add(0,data);
                         mAdapter.notifyDataSetChanged();
                     }
                 } else {
@@ -79,7 +83,11 @@ public class petitionboard extends AppCompatActivity {
         });
         BottomNavigationView bottomNavigation  = findViewById(R.id.bottomNav);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
+        MenuItem item = bottomNavigation.getMenu().findItem(R.id.go_to_all_bulletin_board);
+        item.setChecked(true);
     }
+
+
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {

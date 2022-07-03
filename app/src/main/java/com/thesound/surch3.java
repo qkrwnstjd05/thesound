@@ -6,43 +6,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-public class main3 extends AppCompatActivity {
-    Button button5;
-    Button button6;
-
+public class surch3 extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main3);
-
-        button5 = (Button) findViewById(R.id.button5);
-        button6 = (Button) findViewById(R.id.button6);
-
-        button5.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(main3.this, asksee.class);
-                startActivity(i);
-            }
-        });
-
-        button6.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(main3.this, petitionboard3.class);
-                startActivity(i);
-            }
-        });
-
+        setContentView(R.layout.surch3);
 
         BottomNavigationView bottomNavigation  = findViewById(R.id.bottomNav);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
-        MenuItem item = bottomNavigation.getMenu().findItem(R.id.go_to_home3);
+        MenuItem item = bottomNavigation.getMenu().findItem(R.id.go_to_search3);
         item.setChecked(true);
     }
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
