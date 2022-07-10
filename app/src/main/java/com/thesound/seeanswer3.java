@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -41,7 +40,9 @@ public class seeanswer3 extends AppCompatActivity {
         Intent intent=getIntent();
         String key=intent.getStringExtra("key");
 
+
         firebaseAuth=firebaseAuth.getInstance();
+
 
         petitiondetails= (TextView)findViewById(R.id.petitiondetails);
         teachersanswer=(TextView) findViewById(R.id.teachersanswer);
@@ -94,7 +95,6 @@ public class seeanswer3 extends AppCompatActivity {
                         case R.id.go_to_all_bulletin_board:
                             Intent intent=new Intent(getApplicationContext(),petitionboard.class);
                             startActivity(intent);
-                            Toast.makeText(getApplicationContext(), "asdfgh", Toast.LENGTH_SHORT).show();
                             return true;
                         case R.id.go_to_home:
                             Intent intent2=new Intent(getApplicationContext(),Main.class);

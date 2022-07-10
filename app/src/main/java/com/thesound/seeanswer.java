@@ -50,7 +50,10 @@ public class seeanswer extends AppCompatActivity {
         Intent intent=getIntent();
         String key=intent.getStringExtra("key");
 
+
         firebaseAuth=firebaseAuth.getInstance();
+
+
         petitiondetails= (TextView)findViewById(R.id.petitiondetails);
         teachersanswer=(TextView) findViewById(R.id.teachersanswer);
         Petitionername=(TextView) findViewById(R.id.Petitionername);
