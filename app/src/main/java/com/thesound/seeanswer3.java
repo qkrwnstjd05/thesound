@@ -42,6 +42,8 @@ public class seeanswer3 extends AppCompatActivity {
         String key=intent.getStringExtra("key");
         BottomNavigationView bottomNavigation  = findViewById(R.id.bottomNav);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
+        bottomNavigation.bringToFront();
+
 
         firebaseAuth=firebaseAuth.getInstance();
 
@@ -87,31 +89,31 @@ public class seeanswer3 extends AppCompatActivity {
     }
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
-                @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                    switch (item.getItemId()) {
-                        case R.id.go_to_search:
-                            Toast.makeText(getApplicationContext(), "search 클릭", Toast.LENGTH_SHORT).show();
-                            Intent intent1=new Intent(getApplicationContext(),surch.class);
+                @Override
+                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                        if (item.toString().equals("검색")) {
+
+                            Intent intent1 = new Intent(getApplicationContext(), surch3.class);
                             startActivity(intent1);
-                            return true;
-                        case R.id.go_to_all_bulletin_board:
-                            Intent intent=new Intent(getApplicationContext(),petitionboard.class);
+                        }
+                        else if (item.toString().equals("게시판")) {
+                            Intent intent=new Intent(getApplicationContext(),petitionboard3.class);
                             startActivity(intent);
-                            return true;
-                        case R.id.go_to_home:
-                            Intent intent2=new Intent(getApplicationContext(),Main.class);
+                        }
+                        else if (item.toString().equals("홈")) {
+                            Intent intent2=new Intent(getApplicationContext(),main3.class);
                             startActivity(intent2);
-                            return true;
-                        case R.id.go_to_our_school_bulletin_board:
+                        }
+                        else if (item.toString().equals("답변한 건의")) {
                             Intent intent3=new Intent(getApplicationContext(),our_school_bullentin_board.class);
                             startActivity(intent3);
-                            return true;
-                        case R.id.go_to_inbox:
+                        }
+                        else if (item.toString().equals("인증 요청 보기")) {
                             Intent intent4=new Intent(getApplicationContext(),storagebox.class);
                             startActivity(intent4);
-                            return true;
-                    }
+                        }
                     return false;
-                }
+                    }
+                };
             };
-}
+

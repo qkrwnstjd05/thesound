@@ -53,14 +53,16 @@ public class our_school_bullentin_board extends AppCompatActivity {
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
                 if (task.isSuccessful()) {
                     for (QueryDocumentSnapshot document : task.getResult()) {
-
                         count++;
                         Map<String,Object> jsonData=document.getData();
-                        //Map<String,String> jsonString=(Map<String, String>) jsonData.get("title");
-                        listDTO data = new listDTO(String.valueOf(count), jsonData.get("title").toString(), String.valueOf(jsonData.get("like")),document.getId());
-                        Log.d("datatadat",data.toString());
-                        mArrayList.add(0,data);
-                        mAdapter.notifyDataSetChanged();
+                        if(!jsonData.get("answer").equals("")){
+                            //Map<String,String> jsonString=(Map<String, String>) jsonData.get("title");
+                            listDTO data = new listDTO(String.valueOf(count), jsonData.get("title").toString(), String.valueOf(jsonData.get("like")),document.getId());
+                            Log.d("datatadat",data.toString());
+                            mArrayList.add(0,data);
+                            mAdapter.notifyDataSetChanged();
+                        }
+
                     }
                 } else {
                     Log.w("err", task.getException());

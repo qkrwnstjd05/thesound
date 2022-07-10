@@ -53,8 +53,10 @@ public class seeanswer extends AppCompatActivity {
         Intent intent=getIntent();
         String key=intent.getStringExtra("key");
 
-        BottomNavigationView bottomNavigation  = findViewById(R.id.bottomNav);
+        BottomNavigationView bottomNavigation  = (BottomNavigationView) findViewById(R.id.bottomNav);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
+        bottomNavigation.bringToFront();
+
 
         firebaseAuth=firebaseAuth.getInstance();
         petitiondetails= (TextView)findViewById(R.id.petitiondetails);
@@ -97,30 +99,26 @@ public class seeanswer extends AppCompatActivity {
     }
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
-                @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                    switch (item.getItemId()) {
-                        case R.id.go_to_search:
-                            Intent intent1=new Intent(getApplicationContext(),surch.class);
-                            startActivity(intent1);
-                            return true;
-                        case R.id.go_to_all_bulletin_board:
-                            Intent intent=new Intent(getApplicationContext(),petitionboard.class);
-                            startActivity(intent);
-                            return true;
-                        case R.id.go_to_home:
-                            Intent intent2=new Intent(getApplicationContext(),Main.class);
-                            startActivity(intent2);
-                            return true;
-                        case R.id.go_to_our_school_bulletin_board:
-                            Intent intent3=new Intent(getApplicationContext(),our_school_bullentin_board.class);
-                            startActivity(intent3);
-                            return true;
-                        case R.id.go_to_inbox:
-                            Intent intent4=new Intent(getApplicationContext(),storagebox.class);
-                            startActivity(intent4);
-                            return true;
+                @Override
+                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                    if (item.toString().equals("검색")) {
+
+                        Intent intent1 = new Intent(getApplicationContext(), surch.class);
+                        startActivity(intent1);
+                    } else if (item.toString().equals("게시판")) {
+                        Intent intent = new Intent(getApplicationContext(), petitionboard.class);
+                        startActivity(intent);
+                    } else if (item.toString().equals("홈")) {
+                        Intent intent2 = new Intent(getApplicationContext(), Main.class);
+                        startActivity(intent2);
+                    } else if (item.toString().equals("답변된 건의")) {
+                        Intent intent3 = new Intent(getApplicationContext(), our_school_bullentin_board.class);
+                        startActivity(intent3);
+                    } else if (item.toString().equals("보관함")) {
+                        Intent intent4 = new Intent(getApplicationContext(), storagebox.class);
+                        startActivity(intent4);
                     }
-                    return false;
+return false;
                 }
             };
-}
+    };
