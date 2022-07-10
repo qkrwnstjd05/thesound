@@ -73,7 +73,8 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginHorizontal="25dp"
                     android:layout_marginTop="15dp"
-                    android:hint=" 학교 이름" />
+                    android:hint=" 학교 이름"
+                    tools:ignore="SpeakableTextPresentCheck" />
                 <!--android:background="@drawable/textline"-->
 
                 <LinearLayout

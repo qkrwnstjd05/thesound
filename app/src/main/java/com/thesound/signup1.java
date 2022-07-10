@@ -84,6 +84,7 @@ public class signup1 extends AppCompatActivity {
         ArrayList<String> paths = new ArrayList<>();
         ArrayList<String> uids = new ArrayList<>();
 
+
         FirebaseFirestore db = FirebaseFirestore.getInstance();
         CollectionReference productRef = db.collection("schoolUser");
         productRef.get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
@@ -99,6 +100,7 @@ public class signup1 extends AppCompatActivity {
                             e.printStackTrace();
                         }
                     }
+
                 } else {
 
                 }
@@ -109,6 +111,7 @@ public class signup1 extends AppCompatActivity {
         textSchoolname.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getApplicationContext(), position, Toast.LENGTH_SHORT).show();
                 chkSpinner=uids.get(position);
                 Log.d("select",chkSpinner);
                 textSchoolname.setSelection(position);
