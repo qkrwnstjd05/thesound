@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -39,7 +40,8 @@ public class seeanswer3 extends AppCompatActivity {
 
         Intent intent=getIntent();
         String key=intent.getStringExtra("key");
-
+        BottomNavigationView bottomNavigation  = findViewById(R.id.bottomNav);
+        bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
 
         firebaseAuth=firebaseAuth.getInstance();
 
@@ -81,14 +83,14 @@ public class seeanswer3 extends AppCompatActivity {
                 }
             }
         });
-        BottomNavigationView bottomNavigation  = findViewById(R.id.bottomNav);
-        bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
+
     }
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                     switch (item.getItemId()) {
                         case R.id.go_to_search:
+                            Toast.makeText(getApplicationContext(), "search 클릭", Toast.LENGTH_SHORT).show();
                             Intent intent1=new Intent(getApplicationContext(),surch.class);
                             startActivity(intent1);
                             return true;

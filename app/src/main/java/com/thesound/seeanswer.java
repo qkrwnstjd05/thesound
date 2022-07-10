@@ -22,6 +22,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
 
+import org.w3c.dom.Text;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -47,13 +49,14 @@ public class seeanswer extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_seeanswer);
 
+
         Intent intent=getIntent();
         String key=intent.getStringExtra("key");
 
+        BottomNavigationView bottomNavigation  = findViewById(R.id.bottomNav);
+        bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
 
         firebaseAuth=firebaseAuth.getInstance();
-
-
         petitiondetails= (TextView)findViewById(R.id.petitiondetails);
         teachersanswer=(TextView) findViewById(R.id.teachersanswer);
         Petitionername=(TextView) findViewById(R.id.Petitionername);
@@ -91,8 +94,6 @@ public class seeanswer extends AppCompatActivity {
                 }
             }
         });
-        BottomNavigationView bottomNavigation  = findViewById(R.id.bottomNav);
-        bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
     }
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
