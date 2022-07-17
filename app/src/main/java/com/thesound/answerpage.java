@@ -30,16 +30,25 @@ public class answerpage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.answerpage);
 
+        Intent intent=getIntent();
+        String key=intent.getStringExtra("key");
         editTextTextpetitonanswer = (EditText) findViewById(R.id.editTextTextpetitonanswer);
 
         String studentUid= FirebaseAuth.getInstance().getCurrentUser().getUid();
-        Button b1=(Button) findViewById(R.id.button16);
+        Button b1=(Button) findViewById(R.id.answerBtn);
+        EditText answer=(EditText) findViewById(R.id.editTextTextpetitonanswer);
+
         FirebaseFirestore db=FirebaseFirestore.getInstance();
 
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //db.collection("petition").document("Er7Qqwkr1PqaWgUsytl6").set("answer").//
+                String answerTxt = answer.getText().toString();
+                db.collection("petition").document(key).update("answer",answerTxt,
+                        "schoolUid",FirebaseAuth.getInstance().getCurrentUser().getUid(),
+                        "isAnswer",true);
+                Intent intent = new Intent(answerpage.this,seeanswer3.class);
+                startActivity(intent);
             }
         });
 

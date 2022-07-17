@@ -97,6 +97,7 @@ public class seeanswer3 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(seeanswer3.this, answerpage.class);
+                i.putExtra("key",key);
                 startActivity(i);
             }
         });
