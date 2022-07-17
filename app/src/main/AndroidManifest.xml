@@ -13,6 +13,10 @@
             android:name=".main3"
             android:exported="false" />
         <activity
+            android:name="answerpage"
+            android:exported="false" />
+
+        <activity
             android:name=".signup2"
             android:exported="false" />
         <activity
