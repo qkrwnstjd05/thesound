@@ -28,7 +28,7 @@ public class answerpage extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_seeanswer);
+        setContentView(R.layout.answerpage);
 
         editTextTextpetitonanswer = (EditText) findViewById(R.id.editTextTextpetitonanswer);
 

@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -31,12 +33,17 @@ public class seeanswer3 extends AppCompatActivity {
     private TextView petitiondetails;
     private TextView Teachersname;
     private TextView teachersanswer;
+    Button button4;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_seeanswer);
+        setContentView(R.layout.activity_seeanswer3);
+
+        button4 = (Button) findViewById(R.id.button4);
+
+
 
         Intent intent=getIntent();
         String key=intent.getStringExtra("key");
@@ -85,6 +92,15 @@ public class seeanswer3 extends AppCompatActivity {
                 }
             }
         });
+
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(seeanswer3.this, answerpage.class);
+                startActivity(i);
+            }
+        });
+
 
     }
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
