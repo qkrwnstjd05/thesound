@@ -30,7 +30,7 @@ public class Main extends AppCompatActivity {
 
     int i = 0;
 
-
+//메인화면 top3 청원 제목 안 눌림
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
