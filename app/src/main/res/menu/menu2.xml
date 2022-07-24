@@ -30,8 +30,8 @@
 
     <item
         android:id="@+id/view_authentication_requests"
-        android:icon="@drawable/checkbox_marked_icon_138772"
-        android:title="인증 요청 보기"
+        android:icon="@drawable/ic_baseline_all_inbox_24"
+        android:title="답변을 기다리는 건의"
         app:showAsAction="always"
         app:itemIconTint="@drawable/color"
         app:itemTextColor="@drawable/color"/>
