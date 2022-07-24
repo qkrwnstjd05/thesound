@@ -7,7 +7,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,6 +20,7 @@ import com.google.firebase.Timestamp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FieldValue;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.QueryDocumentSnapshot;
 import com.google.firebase.firestore.QuerySnapshot;
@@ -42,7 +45,7 @@ public class seeanswer extends AppCompatActivity {
     private TextView petitiondetails;
     private TextView Teachersname;
     private TextView teachersanswer;
-
+    private ImageButton imageButton4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +66,8 @@ public class seeanswer extends AppCompatActivity {
         teachersanswer=(TextView) findViewById(R.id.teachersanswer);
         Petitionername=(TextView) findViewById(R.id.Petitionername);
         petitiontitle=(TextView) findViewById(R.id.petitiontitle);
+        imageButton4=(ImageButton) findViewById(R.id.imageButton4);
+
 
         final FirebaseFirestore db = FirebaseFirestore.getInstance();
         DocumentReference docRef = db.collection("petition").document(key);
@@ -94,6 +99,12 @@ public class seeanswer extends AppCompatActivity {
                 } else {
                     Log.w("err", task.getException());
                 }
+            }
+        });
+        imageButton4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FirebaseFirestore.getInstance().collection("petition").document(key).update("like",FieldValue.increment(1));
             }
         });
     }

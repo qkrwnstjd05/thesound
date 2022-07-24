@@ -60,7 +60,7 @@
         android:orientation="horizontal">
 
         <ImageButton
-            android:id="@+id/imageButton3"
+            android:id="@+id/backBtn"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -71,6 +71,7 @@
             app:srcCompat="@drawable/ic_baseline_arrow_back_24" />
 
         <EditText
+            android:id="@+id/edit"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginTop="5dp"
@@ -82,7 +83,7 @@
             android:inputType="textPersonName" />
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/searchBtn"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginTop="5dp"
@@ -94,18 +95,14 @@
 
     </LinearLayout>
 
-    <ScrollView
+    <ListView
+        android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_above="@id/bottomNav"
         android:layout_below="@id/surch"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="60dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
+        android:divider="#999999"
+        android:dividerHeight="1dp"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNav"
