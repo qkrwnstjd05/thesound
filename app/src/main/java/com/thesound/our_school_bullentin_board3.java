@@ -91,9 +91,9 @@ public class our_school_bullentin_board3 extends AppCompatActivity{
 
 
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
-            bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
             new BottomNavigationView.OnNavigationItemSelectedListener() {
-                @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                @Override
+                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                     switch (item.getItemId()) {
                         case R.id.go_to_search3:
                             Intent intent1=new Intent(getApplicationContext(),surch3.class);

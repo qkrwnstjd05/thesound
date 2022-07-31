@@ -27,7 +27,7 @@ public class main3 extends AppCompatActivity {
     Button button5;
     Button button6;
     private ArrayList<listDTO> mArrayList;
-    private CustomAdapter mAdapter;
+    private CustomAdapter3 mAdapter;
 
     private int count = -1;
 
@@ -43,7 +43,7 @@ public class main3 extends AppCompatActivity {
 
         mArrayList = new ArrayList<>();
 
-        mAdapter = new CustomAdapter(mArrayList);
+        mAdapter = new CustomAdapter3(mArrayList);
         mRecyclerView.setAdapter(mAdapter);
 
 
