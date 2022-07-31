@@ -104,6 +104,9 @@ public class seeanswer3 extends AppCompatActivity {
 
 
     }
+
+
+
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override
