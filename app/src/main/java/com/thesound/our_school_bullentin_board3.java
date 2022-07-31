@@ -40,7 +40,7 @@ public class our_school_bullentin_board3 extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.petitionboard3);
+        setContentView(R.layout.our_school_bulletin_board3);
 
 
 
@@ -66,28 +66,32 @@ public class our_school_bullentin_board3 extends AppCompatActivity{
             public void onComplete(@NonNull Task<QuerySnapshot> task) {
                 if (task.isSuccessful()) {
                     for (QueryDocumentSnapshot document : task.getResult()) {
-
                         count++;
                         Map<String,Object> jsonData=document.getData();
-                        //Map<String,String> jsonString=(Map<String, String>) jsonData.get("title");
-                        listDTO data = new listDTO(String.valueOf(count), jsonData.get("title").toString(), String.valueOf(jsonData.get("like")),document.getId());
-                        Log.d("datatadat",data.toString());
-                        mArrayList.add(0,data);
-                        mAdapter.notifyDataSetChanged();
+                        if(!jsonData.get("answer").equals("")){
+                            //Map<String,String> jsonString=(Map<String, String>) jsonData.get("title");
+                            listDTO data = new listDTO(String.valueOf(count), jsonData.get("title").toString(), String.valueOf(jsonData.get("like")),document.getId());
+                            Log.d("datatadat",data.toString());
+                            mArrayList.add(0,data);
+                            mAdapter.notifyDataSetChanged();
+                        }
+
                     }
                 } else {
                     Log.w("err", task.getException());
                 }
             }
         });
+
         BottomNavigationView bottomNavigation  = findViewById(R.id.bottomNav);
         bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
-        MenuItem item = bottomNavigation.getMenu().findItem(R.id.go_to_all_bulletin_board3);
+        MenuItem item = bottomNavigation.getMenu().findItem(R.id.go_to_suggestionan_swered);
         item.setChecked(true);
     }
 
 
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
+            bottomNavigation.setOnNavigationItemSelectedListener(navigationItemSelectedListener);
             new BottomNavigationView.OnNavigationItemSelectedListener() {
                 @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                     switch (item.getItemId()) {
