@@ -10,52 +10,38 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Thesound">
         <activity
-            android:name=".main3"
-            android:exported="false" />
+            android:name=".main3" />
         <activity
-            android:name="answerpage"
-            android:exported="false" />
+            android:name="answerpage" />
 
         <activity
-            android:name=".signup2"
-            android:exported="false" />
+            android:name=".signup2" />
         <activity
-            android:name=".seeanswer"
-            android:exported="false" />
+            android:name=".seeanswer" />
         <activity
-            android:name=".textline"
-            android:exported="false" />
+            android:name=".textline" />
         <activity
-            android:name=".petiton"
-            android:exported="false" />
+            android:name=".petiton" />
         <activity
-            android:name=".asksee"
-            android:exported="false" />
+            android:name=".asksee" />
         <activity
-            android:name=".askX"
-            android:exported="false" />
+            android:name=".askX" />
 
         <activity
-            android:name=".ask1"
-            android:exported="true" >
+            android:name=".ask1" >
 
 
         </activity>
         <activity
-            android:name=".askO"
-            android:exported="false" />
+            android:name=".askO" />
         <activity
-            android:name=".ask2"
-            android:exported="false" />
+            android:name=".ask2" />
         <activity
-            android:name=".surch"
-            android:exported="false" />
+            android:name=".surch"/>
         <activity
-            android:name=".surch3"
-            android:exported="false" />
+            android:name=".surch3" />
         <activity
-            android:name=".signup1"
-            android:exported="false" />
+            android:name=".signup1" />
         <activity
             android:name=".login"
             android:exported="true">
@@ -69,37 +55,29 @@
 
             <!--메인페이지 시작-->
         <activity
-            android:name=".storagebox"
-            android:exported="true"/>
+            android:name=".storagebox"/>
 
         <activity
-            android:name=".Main"
-            android:exported="true">
+            android:name=".Main">
 
         </activity>
         <activity
-            android:name=".petitionboard"
-            android:exported="true">
+            android:name=".petitionboard">
 
         </activity>
         <activity
-            android:name=".petitionboard3"
-            android:exported="true">
+            android:name=".petitionboard3">
 
         </activity>
         <activity
-        android:name=".seeanswer3"
-        android:exported="true">
+        android:name=".seeanswer3">
 
         </activity>
 
-        <activity android:name=".our_school_bullentin_board"
-            android:exported="true"/>
-        <activity android:name=".our_school_bullentin_board3"
-            android:exported="true"/>
+        <activity android:name=".our_school_bullentin_board"/>
+        <activity android:name=".our_school_bullentin_board3"/>
         <activity
-            android:name=".MainActivity"
-            android:exported="true" />
+            android:name=".MainActivity" />
         <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-3940256099942544~3347511713"/>
 
 </application>
