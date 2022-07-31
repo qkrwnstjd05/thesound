@@ -26,6 +26,11 @@ import java.util.List;
 import java.util.Map;
 
 public class surch3 extends AppCompatActivity{
+    private ArrayList<listDTO> mArrayList;
+    private CustomAdapter3 mAdapter;
+
+    private int count = -1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,9 +53,9 @@ public class surch3 extends AppCompatActivity{
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                //String data = (String) adapterView.getItemAtPosition(position);
+                //String data = (String) adapterView.getItemAtPosition(position);e
                 Log.d("text",address.toString());
-                Intent i = new Intent(surch3.this,seeanswer.class);
+                Intent i = new Intent(surch3.this,seeanswer3.class);
                 i.putExtra("key",address.get(position));
                 startActivity(i);
                 finish();

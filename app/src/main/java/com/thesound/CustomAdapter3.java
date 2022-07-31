@@ -15,16 +15,16 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 
-public class CustomAdapter3 extends RecyclerView.Adapter<CustomAdapter3.CustomViewHolder> {
+public class CustomAdapter3 extends RecyclerView.Adapter<CustomAdapter3.CustomViewHolder3> {
 
     private ArrayList<listDTO> mList;
 
-    public class CustomViewHolder extends RecyclerView.ViewHolder {
+    public class CustomViewHolder3 extends RecyclerView.ViewHolder {
         protected TextView num;
         protected TextView name;
         protected TextView view;
 
-        public CustomViewHolder(View view) {
+        public CustomViewHolder3(View view) {
             super(view);
             this.num = (TextView) view.findViewById(R.id.textView_num);
             this.name = (TextView) view.findViewById(R.id.textView_name);
@@ -37,19 +37,19 @@ public class CustomAdapter3 extends RecyclerView.Adapter<CustomAdapter3.CustomVi
     }
 
     @Override
-    public CustomViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
+    public CustomViewHolder3 onCreateViewHolder(ViewGroup viewGroup, int viewType) {
 
         View view = LayoutInflater.from(viewGroup.getContext())
                 .inflate(R.layout.item2, viewGroup, false);
 
-        CustomViewHolder viewHolder = new CustomViewHolder(view);
+        CustomViewHolder3 viewHolder = new CustomViewHolder3(view);
 
         return viewHolder;
     }
 
 
     @Override
-    public void onBindViewHolder(@NonNull CustomViewHolder viewholder, int position) {
+    public void onBindViewHolder(@NonNull CustomViewHolder3 viewholder, int position) {
 
         viewholder.num.setTextSize(TypedValue.COMPLEX_UNIT_SP, 25);
         viewholder.name.setTextSize(TypedValue.COMPLEX_UNIT_SP, 25);
